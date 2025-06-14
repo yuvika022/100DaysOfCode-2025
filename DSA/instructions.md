@@ -2,9 +2,9 @@
 
 We are excited to announce that the **"21 Days of Code"** event is starting from 16/06/2025 at **12 PM**! This is a fantastic opportunity to hone your coding skills and collaborate with fellow participants. Here's how it will work:
 
-## Event Start:
-- The first question will be posted today at **12 PM**.
-- Each day, a new question will be provided at the same time in the `README` of the GitHub repository.
+## Event Start:-
+- Each day, three new question will be provided at the same time in the `README` of the GitHub repository.
+- The questions will be updated at **12 PM**.
 
 ## Repository Setup:
 
