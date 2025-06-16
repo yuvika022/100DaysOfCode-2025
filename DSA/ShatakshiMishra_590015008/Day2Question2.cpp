@@ -16,6 +16,4 @@ int main() {
     } else {
         cout << "First: " << nums[0] << ", Last: " << nums[n - 1] << endl;
     }
-
-    return 0;
 }
