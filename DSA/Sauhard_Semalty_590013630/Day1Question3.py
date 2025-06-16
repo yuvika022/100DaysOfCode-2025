@@ -14,7 +14,7 @@ def find_sum(lst: list[int]) -> int:
 
 
 def main() -> None:
-    "The main function of the program."
+    "The entry point of the program."
 
     try:
         n = int(input("Enter the size of the array: "))

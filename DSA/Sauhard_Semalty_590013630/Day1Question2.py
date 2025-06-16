@@ -2,7 +2,7 @@ import sys
 
 
 def find_missing_and_twice(lst: list[int]) -> tuple[int | None, int | None]:
-    "Find missing number and the number that appears twice."
+    "Finds missing number and the number that appears twice."
 
     missing = None
     twice = None
@@ -17,7 +17,7 @@ def find_missing_and_twice(lst: list[int]) -> tuple[int | None, int | None]:
 
 
 def main() -> None:
-    "The main function of the program."
+    "The entry point of the program."
 
     try:
         n = int(input("Enter the size of the array: "))

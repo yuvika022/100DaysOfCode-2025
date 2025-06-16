@@ -2,7 +2,7 @@ import sys
 
 
 def replace_negatives(lst: list[int]) -> None:
-    "Replace negative numbers with zeros in-place."
+    "Replaces negative numbers with zeros in-place."
 
     for index, value in enumerate(lst):
         if value < 0:
@@ -10,7 +10,7 @@ def replace_negatives(lst: list[int]) -> None:
 
 
 def main() -> None:
-    "The main function of the program."
+    "The entry point of the program."
 
     try:
         n = int(input("Enter the size of the array: "))
