@@ -3,7 +3,7 @@ public class Day1Q2 {
         int n = nums.length;
         int duplicate = -1;
         for (int i = 0; i < n; i++) {
-            int num = Math.ab(nums[i]);
+            int num = Math.abs(nums[i]);
             int idx = num - 1;
             if (nums[idx] < 0) {
                 duplicate = num;
