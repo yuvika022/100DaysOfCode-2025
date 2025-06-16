@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-void replacenegetivewith0(int nums[], int size) {
+void replacenegativewith0(int nums[], int size) {
     for(int i = 0; i < size; i++) {
         if(nums[i] < 0) {
             nums[i] = 0;
@@ -17,7 +17,7 @@ int main() {
         printf("%d ", nums[i]);
     }
 
-    replacenegetivewith0(nums, size);
+    replacenegativewith0(nums, size);
 
     printf("\nModified array: \n");
     for(int i = 0; i < size; i++) {
