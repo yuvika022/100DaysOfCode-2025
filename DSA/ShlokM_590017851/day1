@@ -1,7 +1,0 @@
-void replaceNegativesWithZero(int nums[], int n) {
-    for (int i = 0; i < n; i++) {
-        if (nums[i] < 0) {
-            nums[i] = 0;
-        }
-    }
-}
