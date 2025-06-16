@@ -7,6 +7,6 @@ class Q3 {
         for (int n : arr) {
             sum += n;
         }
-        System.out.println("The sum is" + sum);
+        System.out.println("The sum is " + sum);
     }
 }
