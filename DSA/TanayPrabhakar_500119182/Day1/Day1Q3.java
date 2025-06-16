@@ -1,6 +1,6 @@
 public class Day1Q3 {
     public int sumOfElements(int[] nums) {
-        int sum = 0;
+        int sum;
         for (int num : nums) {
             sum += num;
         }
