@@ -12,11 +12,18 @@ def User_Input():
         arr.append(element)
         return arr
 #function to find a duplicate number in array
+duplicate = []
 def Number_appears_twice():
-    for i in range(len(arr)):
-        if arr[i] == arr [i+1]:
-            print("Number appear Twice is: ",arr[i])
+    for num in set(arr):
+        if  arr.count(num) > 1:
+            duplicate.append(num)
+    print(f"duplicate Number: {duplicate}")
 
 #function to find the missing array element in array
+Missing = []
 def Missing_Number():
+    for num in range(1,max(arr)+1):
+        if num not in arr:
+            Missing.append(num)
+    print(f"Missing Number: {Missing}")
     
