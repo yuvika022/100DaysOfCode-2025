@@ -7,3 +7,4 @@ public class Day1Q3 {
         return sum;
     }
 }
+}
