@@ -1,7 +1,7 @@
 public class Day1Q1 {
     public int[] replaceNegatives(int[] nums) {
         for (int i = 0; i < nums.length; i++) {
-            f (nums[i] < 0) {
+            if (nums[i] < 0) {
                 nums[i] = 0;
             }
         }
