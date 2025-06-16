@@ -17,3 +17,7 @@ public class Ques1 {
         return nums;
     }
 }
+
+
+// Time Complexity will be O(N).
+// Space will be O(1).
