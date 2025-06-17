@@ -21,7 +21,7 @@ class Question3 {
         Arrays.sort(nums);
         if (n >= 2) {
             int second_largest = nums[n - 2];
-            System.out.println("largest: "+second_largest);
+            System.out.println("Second largest: "+second_largest);
         }
         sc.close(); // Always good to close the scanner
 
