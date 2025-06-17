@@ -1,22 +1,18 @@
 import java.util.*;
-public class question2 {
+public class question3 {
     public static void main(String[] args) {
-        int nums[] = {7};
-        List<Integer> res = firstAndlast(nums,nums.length);
-        System.out.println("First: "+res.get(0)+" Last: "+ res.get(1));
+        int nums1[] = {1, 2, 3};
+        int nums2[] = {1,2,3,4};
+        System.out.println(compareArray(nums1,nums2));
     }
-    static List<Integer> firstAndlast(int nums[],int n){
-        int first = -1;
-        int last = -1;
-        n = nums.length;
-        for(int i = 0 ;i < n ; i++ ){
-            if(i == 0){
-                first = nums[i];
-            }
-            if( i == n - 1){
-                last = nums[i];
-            }
-        }
-        return Arrays.asList(first,last);
+    public static boolean compareArray(int nums1[],int nums2[]){
+        int n = nums1.length;
+        int m = nums2.length;
+        if( n != m) return false;
+
+        Arrays.sort(nums1);
+        Arrays.sort(nums2);
+
+        return Arrays.equals(nums1,nums2);
     }
 }
