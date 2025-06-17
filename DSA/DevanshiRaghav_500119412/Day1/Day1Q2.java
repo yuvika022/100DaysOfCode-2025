@@ -5,7 +5,7 @@ public class Day1Q2 {
         for (int i = 0; i < n; i++) {
             int num = Math.abs(nums[i]);
             int idx = num - 1;
-            if (nums[idx] < 0) {
+            if (nums[idx]  0) {
                 duplicate = num;
             } else {
                 nums[idx] = -nums[idx];
