@@ -13,4 +13,4 @@ public class Day2Q1 {
         }
         return sum;
     }
-}
+
