@@ -14,7 +14,3 @@ public class SumEvenNumbers {
         System.out.println("Sum of even numbers: " + sumOfEvens(nums));
     }
 }
-
-public class summation{
-    a = 7;
-}
