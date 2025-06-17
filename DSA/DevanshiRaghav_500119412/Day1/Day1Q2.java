@@ -21,3 +21,4 @@ public class Day1Q2 {
         return new int[]{missing, duplicate};
     }
 
+}
