@@ -1,4 +1,4 @@
-mport java.util.*;
+import java.util.*;
 public class Day2Q2 {
     public static void main(String[] args) {
         int nums[] = {7};
