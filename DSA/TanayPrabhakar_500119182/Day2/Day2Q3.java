@@ -14,5 +14,4 @@ public class Day2Q3 {
         Arrays.sort(nums2);
 
         return Arrays.equals(nums1,nums2);
-    }
-}
+    
