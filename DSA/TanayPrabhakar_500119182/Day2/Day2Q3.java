@@ -15,3 +15,4 @@ public class Day2Q3 {
 
         return Arrays.equals(nums1,nums2);
     }
+}
