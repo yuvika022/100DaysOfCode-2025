@@ -15,7 +15,4 @@ public class SumEvenNumbers {
     }
 }
 
-public class summation{
-    a = 7;
-    b = 8;
-}
+
