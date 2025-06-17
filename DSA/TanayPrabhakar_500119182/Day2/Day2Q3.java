@@ -1,5 +1,5 @@
 import java.util.*;
-public class question3 {
+public class Day2Q3 {
     public static void main(String[] args) {
         int nums1[] = {1, 2, 3};
         int nums2[] = {1,2,3,4};
