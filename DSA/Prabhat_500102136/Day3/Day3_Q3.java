@@ -1,8 +1,17 @@
 import java.util.*;
 public class Day3_Q3 {
     public static int Secondlargest(int arr[],int n){
-        Arrays.sort(arr);
-        return arr[n-2];
+        int max = Integer.MIN_VALUE;
+        int maxsecond = Integer.MIN_VALUE;
+        for (int num : arr) {
+            if (num > max) {
+                maxsecond = max;
+                max = num;
+            } else if (num > maxsecond && num < max) {
+                maxsecond = num;
+            }
+        }
+        return (maxsecond == Integer.MIN_VALUE) ? -1 : maxsecond;
     }
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
