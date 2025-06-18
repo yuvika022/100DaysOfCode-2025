@@ -4,4 +4,12 @@ public class question1 {
         int res = Ksum(nums,3);
         System.out.println(res);
     }
-   
+    public static int Ksum(int nums[],int k){
+        int sum = 0 ; 
+        int max = 0;
+        for(int i : nums){
+            if(i > max){
+                max = i;
+            }
+        }
+
