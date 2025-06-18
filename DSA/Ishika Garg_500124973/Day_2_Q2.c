@@ -15,4 +15,3 @@ int main() {
     findFirstAndLast(nums1, n1); 
     return 0;
 }
-
