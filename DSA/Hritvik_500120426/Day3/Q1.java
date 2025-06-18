@@ -13,7 +13,6 @@ public class Q1 {
             }
         }
     int visited[] = new int[max + 1];
-
         for(int el : nums){
             visited[el] ++;
         }
