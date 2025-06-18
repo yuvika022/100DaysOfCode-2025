@@ -1,23 +1,28 @@
 import sys
-def find_missing_and_twice(lst: list[int]) -> tuple[int | None, int | None]:
-    missing = None
-    twice = None
-    for i in range(1, len(lst) + 1):
-        if lst.count(i) == 0:
-            missing = i
-        elif lst.count(i) == 2:
-            twice = i
-    return missing, twice
+
+
+def has_duplicates(lst: list[int]) -> bool:
+    "Checks if the list has duplicates."
+
+    return any(lst.count(x) > 1 for x in lst)
+
+
 def main() -> None:
+    "The entry point of the program."
+
     try:
         n = int(input("Enter the size of the array: "))
     except ValueError:
         print("Invalid size!")
         sys.exit(-1)
+
+    # Check if length is valid
     if n <= 0:
         print("Size must be greater 0.")
         sys.exit(-1)
+
     nums: list[int] = []
+
     print("+--Enter the values--+")
     for _ in range(n):
         try:
@@ -25,11 +30,11 @@ def main() -> None:
         except ValueError:
             print("Invalid value!")
             sys.exit(-1)
-        if not 1 <= num <= n:
-            print(f"Number must be between 1 and {n} (inclusive).")
-            sys.exit(-1)
+
         nums.append(num)
-    missing, twice = find_missing_and_twice(nums)
-    print(f"Missing: {missing}, Twice: {twice}")
+
+    print(str(has_duplicates(nums)).lower())
+
+
 if __name__ == "__main__":
     main()

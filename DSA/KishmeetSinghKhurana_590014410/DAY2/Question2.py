@@ -1,20 +1,19 @@
 import sys
-def replace_negatives(lst: list[int]) -> None:
-    for index, value in enumerate(lst):
-        if value < 0:
-            lst[index] = 0
+def first_last(arr: list[int]) -> tuple[int | None, int | None]:
+    first=arr[0] 
+    last=arr[-1] 
+    return first, last
 def main() -> None:
     try:
         n = int(input("Enter the size of the array: "))
     except ValueError:
         print("Invalid size!")
         sys.exit(-1)
-    # Check if length is valid
     if n <= 0:
-        print("Size must be greater than 0.")
+        print("Size must be greater 0.")
         sys.exit(-1)
     nums: list[int] = []
-    print("+--Enter the values--+")
+    print("<--Enter the values-->")
     for _ in range(n):
         try:
             num = int(input("> "))
@@ -22,7 +21,7 @@ def main() -> None:
             print("Invalid value!")
             sys.exit(-1)
         nums.append(num)
-    replace_negatives(nums) 
-    print("Output:", nums)
+    print(f"First:{first_last(nums)[0]} Last:{first_last(nums)[1]} ")  # Print the first and last elements    
+    print()
 if __name__ == "__main__":
     main()
