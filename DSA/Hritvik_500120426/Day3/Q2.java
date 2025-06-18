@@ -4,5 +4,10 @@ public class Q2{
     int nums[]={1,2,2,3,4};
     System.out.print(Duplicate(nums));
   }
-public static void Duplicate(int nums[]){
+public static Boolean Duplicate(int nums[]){
+  HashSet<integer>set+ new HashSet<>();
+  for9int i:nums){
+    if(set.contains(i)){
+      return true;
+      
   
