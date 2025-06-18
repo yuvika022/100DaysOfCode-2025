@@ -1,7 +1,7 @@
 import java.util.*;
 public class Q2{
   public static void main(String[]args){
-    int nums[]={1,2,2,3,4};
+    int nums[]={1,2,3,2};
     System.out.print(Duplicate(nums));
   }
 public static Boolean Duplicate(int nums[]){
