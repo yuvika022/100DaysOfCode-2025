@@ -20,7 +20,3 @@ public class Q3 {
     return sec_max;
  }
 }
-
-
-
-
