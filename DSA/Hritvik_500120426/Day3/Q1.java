@@ -17,4 +17,12 @@ public class question1 {
         for(int el : nums){
             visited[el] ++;
         }
+        for(int i = 0 ; i < visited.length ; i++){
+            if(visited[i] == k){
+                sum = sum + i;
+            }
+        }
+        return sum;
+    }
+}
 
