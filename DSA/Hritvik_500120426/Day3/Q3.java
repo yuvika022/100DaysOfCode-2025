@@ -3,6 +3,7 @@ public class Q3 {
         int nums[] = {10,20,30,40};
         System.out.println(secondLargest(nums,nums.length));
     }
+    
     public static int secondLargest(int nums[],int n){
         n = nums.length;
         int max = Integer.MIN_VALUE; 
@@ -15,7 +16,6 @@ public class Q3 {
             else if (i < max && i > sec_max) {
                 sec_max = i;
         }
-
     }
     return sec_max;
  }
