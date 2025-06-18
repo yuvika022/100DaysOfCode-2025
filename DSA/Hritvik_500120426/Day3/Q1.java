@@ -12,4 +12,9 @@ public class question1 {
                 max = i;
             }
         }
+    int visited[] = new int[max + 1];
+
+        for(int el : nums){
+            visited[el] ++;
+        }
 
