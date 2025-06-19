@@ -9,4 +9,6 @@ class Q1{
       min=i;
     }
   }
-  system.out.println
+  System.out.println("The minimum value is "+ min);
+  }
+}
