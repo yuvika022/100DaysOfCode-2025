@@ -2,7 +2,6 @@
 int main() 
 {
     int n;
-    int c=0;
     printf("Enter array size:\n");
     scanf("%d", &n);
 
