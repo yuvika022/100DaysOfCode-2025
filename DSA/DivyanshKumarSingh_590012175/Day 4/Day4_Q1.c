@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int findMinimum(int nums[], int n) 
+int Minimum(int nums[], int n) 
 {
     int min = nums[0];
 
@@ -36,7 +36,7 @@ int main()
         scanf("%d", &nums[i]);
     }
 
-    int min = findMinimum(nums, n);
+    int min = Minimum(nums, n);
 
     printf("The minimum element in the array is: %d\n", min);
 
