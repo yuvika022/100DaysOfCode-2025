@@ -28,6 +28,14 @@ public class Ques2 {
         int temp = nums[first];
         nums[first] = nums[second];
         nums[second] = temp;
+
+    // More Optimized ye hai ->
+    // int sum = nums.length * (nums.length+1)/2;
+    //     int sumOfArray = 0;
+    //     for (int i = 0; i < nums.length; i++) {
+    //         sumOfArray = sumOfArray + nums[i];
+    //     }
+    //     return sum - sumOfArray;
     }
 }
 // Time comp. O(n) and Space will be O(1)
