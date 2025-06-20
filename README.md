@@ -1,60 +1,116 @@
 
-<h2 align="center">Week 1 Day 2 (17/06/2025)</h2>
+<h2 align="center">Week 1 Day 5 (20/06/2025)</h2>
 
-## 1. Sum of All Even Numbers
-A problem that combines conditional logic with accumulation to filter and sum specific elements.
+## 1. Find the Unique Element
+A problem that requires finding the single element that appears only once while all others appear twice.
 
-Given an array of integers `nums` of size `n`, calculate and return the **sum of all even numbers** in the array.
+Given a non-empty array of integers `nums`, where every element appears exactly **twice** except for one element that appears only **once**, find and return the element that appears only once.
 
-This problem combines **conditional logic** with **accumulation**, teaching you to filter elements based on specific criteria while performing mathematical operations on the filtered data.
-
-**Your task:** Calculate and return the sum of all even numbers in the array.
+**Your task:** Find and return the element that appears only once in the array.
 
 ### Examples
 
 **Input:**
 ```
-nums = [1, 2, 3, 4, 5]
+nums = [2, 2, 1]
 ```
 **Output:**
 ```
-6
+1
 ```
 
 ---
 
 **Input:**
 ```
-nums = [10, 15, 20]
+nums = [4, 1, 2, 1, 2]
 ```
 **Output:**
 ```
-30
+4
 ```
 
 ---
 
 **Input:**
 ```
-nums = [1, 3, 5]
+nums = [1]
 ```
 **Output:**
 ```
-0
+1
 ```
 
 ---
 
-## 2. Find First and Last Element
-A problem that teaches array indexing and accessing elements at specific positions.
+## 2. Find the Missing Number
+A problem that introduces mathematical relationships in arrays using expected vs actual sums.
 
-Given an array `nums` of size `n`, return the **first element** and the **last element** of the array as a pair.
+Given an array containing `n` distinct numbers taken from `0, 1, 2, ..., n`, find the one that is **missing** from the array.
 
-This problem teaches you about **array indexing** and how to **access elements at specific positions**, which is fundamental for understanding array boundaries and element positioning.
+This problem introduces you to **mathematical relationships in arrays** and teaches you about the concept of **expected vs actual sums**. It's a classic example of using mathematical properties to solve array problems efficiently.
 
-**Your task:** Return the first and last elements of the array.
+**Your task:** Find the missing number from the sequence 0 to n.
 
 ### Examples
+
+**Input:**
+```
+nums = [3, 0, 1]
+```
+**Output:**
+```
+2
+```
+**Explanation:** The array should contain numbers from 0 to 3, but 2 is missing
+
+---
+
+**Input:**
+```
+nums = [0, 1]
+```
+**Output:**
+```
+2
+```
+**Explanation:** The array should contain numbers from 0 to 2, but 2 is missing
+
+---
+
+**Input:**
+```
+nums = [9, 6, 4, 2, 3, 5, 7, 0, 1]
+```
+**Output:**
+```
+8
+```
+**Explanation:** The array should contain numbers from 0 to 9, but 8 is missing
+
+---
+
+## 3. Check if Array is Palindrome
+A problem that introduces palindrome detection algorithms and symmetry checking.
+
+Given an array `nums` of size `n`, determine if the array is a **palindrome** (reads the same forwards and backwards). Return `true` if it is, otherwise `false`.
+
+This problem introduces you to **palindrome detection algorithms** and **symmetry checking**, which are important concepts in pattern recognition and string/array analysis.
+
+**Your task:** Determine if the array is a palindrome and return true or false.
+
+### Examples
+
+**Input:**
+```
+nums = [1, 2, 3, 2, 1]
+```
+**Output:**
+```
+true
+```
+
+---
 
 **Input:**
 ```
@@ -62,72 +118,16 @@ nums = [1, 2, 3, 4]
 ```
 **Output:**
 ```
-First: 1, Last: 4
+false
 ```
 
 ---
 
 **Input:**
 ```
-nums = [7]
-```
-**Output:**
-```
-First: 7, Last: 7
-```
-
----
-
-**Input:**
-```
-nums = [5, 9, 2]
-```
-**Output:**
-```
-First: 5, Last: 2
-```
-
----
-
-## 3. Check if Two Arrays are Equal
-A problem that introduces frequency counting and comparison techniques for data structure equality.
-
-Given two arrays, determine if both contain the **same elements with the same frequency**, regardless of their order. Return `true` if they are equal, else return `false`.
-
-This problem introduces you to **frequency counting** and **comparison techniques**, which are essential for understanding how to compare data structures and verify equality beyond simple element-by-element comparison.
-
-**Your task:** Determine if two arrays contain the same elements with the same frequencies.
-
-### Examples
-
-**Input:**
-```
-nums1 = [1, 2, 3, 4], nums2 = [4, 3, 2, 1]
+nums = [5, 5, 5, 5]
 ```
 **Output:**
 ```
 true
-```
-
-
----
-
-**Input:**
-```
-nums1 = [1, 2, 2, 3], nums2 = [1, 2, 3, 3]
-```
-**Output:**
-```
-false
-```
-
----
-
-**Input:**
-```
-nums1 = [1, 2, 3], nums2 = [1, 2, 3, 4]
-```
-**Output:**
-```
-false
 ```
