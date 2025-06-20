@@ -1,20 +1,18 @@
 
-<h2 align="center">Week 1 Day 4 (19/06/2025)</h2>
+<h2 align="center">Week 1 Day 5 (20/06/2025)</h2>
 
-## 1. Find the Minimum Element
-A fundamental problem that teaches about finding extremes in data sets using comparison-based algorithms.
+## 1. Find the Unique Element
+A problem that requires finding the single element that appears only once while all others appear twice.
 
-Given an array `nums` of size `n`, find and return the **minimum element** in the array.
+Given a non-empty array of integers `nums`, where every element appears exactly **twice** except for one element that appears only **once**, find and return the element that appears only once.
 
-This is a fundamental problem that teaches you about **finding extremes in data sets** and introduces you to **comparison-based algorithms** that are essential for data analysis and optimization problems.
-
-**Your task:** Find and return the minimum element in the array.
+**Your task:** Find and return the element that appears only once in the array.
 
 ### Examples
 
 **Input:**
 ```
-nums = [4, 2, 7, 1, 9]
+nums = [2, 2, 1]
 ```
 **Output:**
 ```
@@ -25,109 +23,111 @@ nums = [4, 2, 7, 1, 9]
 
 **Input:**
 ```
-nums = [5, 5, 5]
+nums = [4, 1, 2, 1, 2]
 ```
 **Output:**
 ```
-5
+4
 ```
 
 ---
 
 **Input:**
 ```
-nums = [-3, -1, -5, -2]
+nums = [1]
 ```
 **Output:**
 ```
--5
+1
 ```
 
 ---
 
-## 2. Rotate Array by k Steps
-A problem that introduces array manipulation and circular thinking with wraparound scenarios.
+## 2. Find the Missing Number
+A problem that introduces mathematical relationships in arrays using expected vs actual sums.
 
-Given an array `nums` of size `n` and an integer `k`, **rotate the array to the right** by `k` steps. Return the rotated array.
+Given an array containing `n` distinct numbers taken from `0, 1, 2, ..., n`, find the one that is **missing** from the array.
 
-This problem introduces you to **array manipulation** and **circular thinking**, teaching you how to handle **wraparound scenarios** and **modular arithmetic** in practical applications.
+This problem introduces you to **mathematical relationships in arrays** and teaches you about the concept of **expected vs actual sums**. It's a classic example of using mathematical properties to solve array problems efficiently.
 
-**Your task:** Rotate the array to the right by k steps and return the rotated array.
+**Your task:** Find the missing number from the sequence 0 to n.
 
 ### Examples
 
 **Input:**
 ```
-nums = [1, 2, 3, 4, 5], k = 2
-```
-**Output:**
-```
-[4, 5, 1, 2, 3]
-```
-
----
-
-**Input:**
-```
-nums = [10, 20, 30], k = 4
-```
-**Output:**
-```
-[30, 10, 20]
-```
-
----
-
-**Input:**
-```
-nums = [1, 2], k = 1
-```
-**Output:**
-```
-[2, 1]
-```
-
----
-
-## 3. Remove All Occurrences of a Value
-A problem that teaches in-place array modification using two-pointer techniques.
-
-Given an array `nums` of size `n` and a value `val`, **remove all occurrences** of `val` from the array. Return the **new length** of the array after removals.
-
-This problem teaches you about **in-place array modification** and introduces concepts of **two-pointer techniques** that are widely used in array manipulation algorithms.
-
-**Your task:** Remove all occurrences of the given value and return the new length of the array.
-
-### Examples
-
-**Input:**
-```
-nums = [3, 2, 2, 3], val = 3
+nums = [3, 0, 1]
 ```
 **Output:**
 ```
 2
 ```
-**(new array length after removals)**
+**Explanation:** The array should contain numbers from 0 to 3, but 2 is missing
 
 ---
 
 **Input:**
 ```
-nums = [0, 1, 2, 2, 3, 0, 4, 2], val = 2
+nums = [0, 1]
 ```
 **Output:**
 ```
-5
+2
+```
+**Explanation:** The array should contain numbers from 0 to 2, but 2 is missing
+
+---
+
+**Input:**
+```
+nums = [9, 6, 4, 2, 3, 5, 7, 0, 1]
+```
+**Output:**
+```
+8
+```
+**Explanation:** The array should contain numbers from 0 to 9, but 8 is missing
+
+---
+
+## 3. Check if Array is Palindrome
+A problem that introduces palindrome detection algorithms and symmetry checking.
+
+Given an array `nums` of size `n`, determine if the array is a **palindrome** (reads the same forwards and backwards). Return `true` if it is, otherwise `false`.
+
+This problem introduces you to **palindrome detection algorithms** and **symmetry checking**, which are important concepts in pattern recognition and string/array analysis.
+
+**Your task:** Determine if the array is a palindrome and return true or false.
+
+### Examples
+
+**Input:**
+```
+nums = [1, 2, 3, 2, 1]
+```
+**Output:**
+```
+true
 ```
 
 ---
 
 **Input:**
 ```
-nums = [1, 1, 1], val = 1
+nums = [1, 2, 3, 4]
 ```
 **Output:**
 ```
-0
+false
+```
+
+---
+
+**Input:**
+```
+nums = [5, 5, 5, 5]
+```
+**Output:**
+```
+true
 ```
