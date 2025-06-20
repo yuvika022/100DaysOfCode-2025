@@ -1,3 +1,5 @@
+/*This program takes the minimum element approach, pretty much what we do during Selection Sort. Here min_element is the first element which is compared to the 
+other elements and the value is changed to the compared value if the compared value is smaller [Code by Saksham Dwivedi (Comments added later)]*/
 #include <stdio.h>
 
 int arr[100];
