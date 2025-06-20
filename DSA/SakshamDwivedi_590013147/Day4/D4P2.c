@@ -1,3 +1,5 @@
+/* This logic takes the approach of taking the last element and storing it in a temp variable and swapping other elements with their previous ones then later 
+element at index 0 is replaced with the last element which was stored in temp giving an illusion of rotation. [Code by Saksham Dwivedi (Comments added later)]*/
 #include <stdio.h>
 
 int arr[100];
