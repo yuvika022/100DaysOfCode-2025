@@ -5,7 +5,6 @@ class Q3 {
         int[] arr = {1, 2, 3, 2, 1};
         System.out.println(isPalindrome(arr, arr.length));
     }
-
     public static boolean isPalindrome(int[] arr, int n) {
 
         int l = 0;
