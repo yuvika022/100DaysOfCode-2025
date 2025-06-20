@@ -1,4 +1,4 @@
-import java.util.*
+import java.util.*;
 public class Day1Question3{
     public static void main(String[] args){
     System.out.println("Enter the no. of elements in the aaray:")
@@ -17,4 +17,5 @@ public class Day1Question3{
         sum=sum+arr[i];
     }
     System.out.println("The sum of the array is "+sum);
+}
 }
