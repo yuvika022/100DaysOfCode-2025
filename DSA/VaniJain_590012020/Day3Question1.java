@@ -1,9 +1,9 @@
-import java.util.*
+import java.util.*;
 public class SumOfFrequency
 {
     public static void main(String[] args)
 {
-    System.out.println("Enter the no. of elements in the aaray:")
+    System.out.println("Enter the no. of elements in the aaray:");
     Scanner scr = new Scanner(System.in);
     int n=scr.nextInt();
     int [] array= new int[n];
@@ -29,3 +29,5 @@ public class SumOfFrequency
     }
     System.out.println("The sum of the elemnts with "+k+" frequency is "+sum);
 }
+}
+
