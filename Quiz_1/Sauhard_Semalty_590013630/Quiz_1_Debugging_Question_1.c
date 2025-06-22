@@ -1,11 +1,5 @@
-#include <stdio.h>  // For NULL
-
 int maxSubarraySum(int nums[], int n)
 {
-    if (nums == NULL || n <= 0) {  // Invalid input handling
-        return 0;
-    }
-
     int maxSum = nums[0];
 
     for (int i = 0; i < n; i++)
@@ -26,6 +20,7 @@ int maxSubarraySum(int nums[], int n)
             }
         }
     }
+
     return maxSum;
 }
 
