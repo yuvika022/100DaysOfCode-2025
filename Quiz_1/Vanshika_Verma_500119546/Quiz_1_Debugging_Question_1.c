@@ -32,7 +32,7 @@ int maxSubarraySum(int nums[], int n) {
 }
 int main() 
 {
-    int arr[] = {-3, -2, -1, -4};
+    int arr[] = {-3, -2, -1, -4};  // ans will be -1 but the code given on google forms is giving -2 as output
     int n = sizeof(arr) / sizeof(arr[0]);
     int res = maxSubarraySum(arr, n);
     printf("Max subarray sum-  %d\n", res);
