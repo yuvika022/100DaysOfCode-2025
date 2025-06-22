@@ -25,4 +25,3 @@ int main()
     int result = findMax(arr, n);
     printf("%d" , result);
 }
-
