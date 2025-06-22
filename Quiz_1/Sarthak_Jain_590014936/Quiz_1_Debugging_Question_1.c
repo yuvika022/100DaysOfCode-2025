@@ -42,6 +42,7 @@ int maxSubarraySum(int nums[], int n) {
     return maxSum;
 }
 
+//Example
 int main() {
     int arr[] = {-3, -2, -1, -4};
     int n = sizeof(arr) / sizeof(arr[0]);
