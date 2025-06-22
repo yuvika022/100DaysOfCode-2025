@@ -5,7 +5,9 @@ def missing_number_from_range(lst: list[int], n: int) -> int:
     """Finds the missing element from the list containing
     numbers from 0 to n."""
 
-    return sum(range(0, n + 1)) - sum(lst)
+    real_sum = n*(n + 1) // 2  # Arithmetic progression formula
+
+    return real_sum - sum(lst)
 
 
 def main() -> None:
