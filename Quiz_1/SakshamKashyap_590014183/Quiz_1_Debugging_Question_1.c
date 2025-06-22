@@ -40,19 +40,18 @@ solution: -1
 
 #include <stdio.h>
 
-// Function to find the maximum subarray sum
 int maxSubarraySum(int nums[], int n) {
     int maxSum = nums[0];
     int currentSum = nums[0];
 
     for (int i = 1; i < n; i++) {
-        // Choose the maximum between current element and sum including current element
+        
         if (currentSum + nums[i] > nums[i])
             currentSum = currentSum + nums[i];
         else
             currentSum = nums[i];
 
-        // Update maxSum if currentSum is greater
+    
         if (currentSum > maxSum)
             maxSum = currentSum;
     }
@@ -61,16 +60,22 @@ int maxSubarraySum(int nums[], int n) {
 }
 
 int main() {
-    // Sample input array
-    int nums[] = {-2, 1, -3, 4, -1, 2, 1, -5, 4};
-    int n = sizeof(nums) / sizeof(nums[0]);
+    int n;
 
-    // Function call
+    printf("Enter the number of elements in the array: ");
+    scanf("%d", &n);
+
+    int nums[n];
+
+    for (int i = 0; i < n; i++) {
+        printf("Enter element %d: ", i + 1);
+        scanf("%d", &nums[i]);
+    }
+
+
     int result = maxSubarraySum(nums, n);
 
-    // Print the result
     printf("Maximum Subarray Sum is: %d\n", result);
 
     return 0;
 }
-
