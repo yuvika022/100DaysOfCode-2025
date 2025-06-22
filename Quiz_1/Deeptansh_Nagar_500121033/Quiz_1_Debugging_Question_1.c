@@ -20,8 +20,7 @@
 
 // TASK 3 - What would the function return for the input: int arr[] = {-3, -2, -1, -4};? 
 // Function will return :- -2
-// it should return -1 which contradicts.
-
+// This should return -1 instead of -2.
      
 
 
@@ -48,8 +47,7 @@ int maxSubarraySum(int nums[], int n) {
 }
 
 int main() {
-    // int arr[] = {-3, -2, -1, -4};
-    int arr[] = {-5, -2, -3, -1};
+    int arr[] = {-3, -2, -1, -4}; // ans will be -1 but the code given on google forms is giving -2 as output.
     int n = sizeof(arr) / sizeof(arr[0]);
     int result = maxSubarraySum(arr, n);
     printf("Maximum subarray sum: %d\n", result);
