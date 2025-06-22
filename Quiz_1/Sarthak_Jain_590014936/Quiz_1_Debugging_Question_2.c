@@ -33,3 +33,14 @@ int findMax(int arr[], int n)
     return max;
 }
 
+// Example
+int main() 
+{
+    int arr[] = {12, 45, 7, 89, 33};
+    int n = sizeof(arr) / sizeof(arr[0]);
+
+    int result = findMax(arr, n);
+    printf("Maximum element in the array: %d\n", result);  // Output: 89
+
+    return 0;
+}
