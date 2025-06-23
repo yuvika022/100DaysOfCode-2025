@@ -8,7 +8,6 @@ class Q3 {
         System.out.print("Enter a String: ");
         String s = sc.nextLine();
         String reversed = new StringBuilder(s).reverse().toString();
-
         System.out.println("Reversed String: " + reversed);
     }
 }
