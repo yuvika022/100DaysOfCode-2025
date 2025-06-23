@@ -7,10 +7,8 @@ class Q3 {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter a String: ");
         String s = sc.nextLine();
+        String reversed = new StringBuilder(s).reverse().toString();
 
-        System.out.println("Length of String: " + s.length());
-        System.out.println("Original String: " + s);
-        System.out.println("Uppercase: " + s.toUpperCase());
-        System.out.println("Lowercase: " + s.toLowerCase());
+        System.out.println("Reversed String: " + reversed);
     }
 }
