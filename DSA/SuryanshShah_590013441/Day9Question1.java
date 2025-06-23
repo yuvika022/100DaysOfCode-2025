@@ -21,8 +21,8 @@ class Day9Question1
             j--;
         }
         if(flag==1)
-            System.out.println("The given string"+str+" is not a Pallindrome");
+            System.out.println("false");
         else
-            System.out.println("The given string"+str+" is a Pallindrome");
+            System.out.println("true");
     }
 }
