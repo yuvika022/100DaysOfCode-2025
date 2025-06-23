@@ -1,133 +1,132 @@
 
-<h2 align="center">Week 1 Day 2 (17/06/2025)</h2>
+<h2 align="center"> Day 8 (23/06/2025)</h2>
 
-## 1. Sum of All Even Numbers
-A problem that combines conditional logic with accumulation to filter and sum specific elements.
+## 1. String Length and Basics
+A problem that introduces fundamental string operations including length calculation and case conversion.
 
-Given an array of integers `nums` of size `n`, calculate and return the **sum of all even numbers** in the array.
+Write a program that takes a string as input and returns its **length** (number of characters). Additionally, convert the string to **uppercase** and **lowercase**, and display both versions along with the original string.
 
-This problem combines **conditional logic** with **accumulation**, teaching you to filter elements based on specific criteria while performing mathematical operations on the filtered data.
+This problem helps you understand **basic string operations** that are fundamental to most string manipulation tasks in programming.
 
-**Your task:** Calculate and return the sum of all even numbers in the array.
-
-### Examples
-
-**Input:**
-```
-nums = [1, 2, 3, 4, 5]
-```
-**Output:**
-```
-6
-```
-
----
-
-**Input:**
-```
-nums = [10, 15, 20]
-```
-**Output:**
-```
-30
-```
-
----
-
-**Input:**
-```
-nums = [1, 3, 5]
-```
-**Output:**
-```
-0
-```
-
----
-
-## 2. Find First and Last Element
-A problem that teaches array indexing and accessing elements at specific positions.
-
-Given an array `nums` of size `n`, return the **first element** and the **last element** of the array as a pair.
-
-This problem teaches you about **array indexing** and how to **access elements at specific positions**, which is fundamental for understanding array boundaries and element positioning.
-
-**Your task:** Return the first and last elements of the array.
+**Your task:** Calculate string length and convert to uppercase and lowercase formats.
 
 ### Examples
 
 **Input:**
 ```
-nums = [1, 2, 3, 4]
+"Hello World"
 ```
 **Output:**
 ```
-First: 1, Last: 4
+Length: 11, Original: "Hello World", Uppercase: "HELLO WORLD", Lowercase: "hello world"
 ```
 
 ---
 
 **Input:**
 ```
-nums = [7]
+"Python"
 ```
 **Output:**
 ```
-First: 7, Last: 7
+Length: 6, Original: "Python", Uppercase: "PYTHON", Lowercase: "python"
 ```
 
 ---
 
 **Input:**
 ```
-nums = [5, 9, 2]
+"Programming123"
 ```
 **Output:**
 ```
-First: 5, Last: 2
+Length: 13, Original: "Programming123", Uppercase: "PROGRAMMING123", Lowercase: "programming123"
 ```
 
 ---
 
-## 3. Check if Two Arrays are Equal
-A problem that introduces frequency counting and comparison techniques for data structure equality.
+## 2. Character Count
+A problem that teaches character frequency counting with case-sensitive matching.
 
-Given two arrays, determine if both contain the **same elements with the same frequency**, regardless of their order. Return `true` if they are equal, else return `false`.
+Given a string and a specific character, write a program that counts how many times that character appears in the string. The search should be **case sensitive**, meaning `'A'` and `'a'` are considered different characters.
 
-This problem introduces you to **frequency counting** and **comparison techniques**, which are essential for understanding how to compare data structures and verify equality beyond simple element-by-element comparison.
+This type of **character frequency counting** is useful in text analysis, data processing, and many string algorithms.
 
-**Your task:** Determine if two arrays contain the same elements with the same frequencies.
+**Your task:** Count the occurrences of a specific character in a string (case sensitive).
 
 ### Examples
 
 **Input:**
 ```
-nums1 = [1, 2, 3, 4], nums2 = [4, 3, 2, 1]
+String: "programming", Character: 'r'
 ```
 **Output:**
 ```
-true
-```
-
-
----
-
-**Input:**
-```
-nums1 = [1, 2, 2, 3], nums2 = [1, 2, 3, 3]
-```
-**Output:**
-```
-false
+2
 ```
 
 ---
 
 **Input:**
 ```
-nums1 = [1, 2, 3], nums2 = [1, 2, 3, 4]
+String: "Hello World", Character: 'l'
 ```
 **Output:**
 ```
-false
+3
+```
+
+---
+
+**Input:**
+```
+String: "JavaScript", Character: 'a'
+```
+**Output:**
+```
+2
+```
+
+---
+
+## 3. Reverse a String
+A fundamental string manipulation problem that teaches character indexing and reversal techniques.
+
+Write a function that takes a string as input and returns the string with **all characters in reverse order**. For example, if the input is `"hello"`, the output should be `"olleh"`.
+
+This is a **fundamental string manipulation problem** that helps you understand how to work with **string indexing** and **character manipulation**.
+
+**Your task:** Return the string with all characters in reverse order.
+
+### Examples
+
+**Input:**
+```
+"hello"
+```
+**Output:**
+```
+"olleh"
+```
+
+---
+
+**Input:**
+```
+"world"
+```
+**Output:**
+```
+"dlrow"
+```
+
+---
+
+**Input:**
+```
+"12345"
+```
+**Output:**
+```
+"54321"
 ```
