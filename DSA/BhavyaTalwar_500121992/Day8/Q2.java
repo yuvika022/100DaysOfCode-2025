@@ -10,13 +10,11 @@ class Q2 {
         System.out.print("Enter a Character: ");
         char c = sc.nextLine().charAt(0);
 
-        char[] ch = s.toCharArray();
         int count = 0;
-        for (char i : ch) {
-            if (i == c) {
+        for (int i = 0; i < s.length(); i++) {
+            if (s.charAt(i) == c) {
                 count++;
             }
-
         }
         System.out.println("Character " + c + " occured " + count + " times.");
     }
