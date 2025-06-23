@@ -1,7 +1,5 @@
-
 #include <stdio.h>
 #include <string.h>
-
 char string[100];
 int char_count = 0;
 char character;
@@ -36,8 +34,6 @@ int main(){
             char_count += 1;
         }
     }
-
     printf("Character count : %d", char_count);
-
     return 0;
 }
