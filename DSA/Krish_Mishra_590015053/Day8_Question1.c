@@ -1,37 +1,45 @@
 #include <stdio.h>
 #include <string.h>
-char string[100];
-char upper[100];
-char lower[100];
-int size;
-int main(){
-    printf("Enter the string (Less than 100 characters ) : ");
-    fgets(string, 100, stdin);
-    fflush(stdin);
-    if (string[strlen(string) - 1] == '\n') {
-    string[strlen(string) - 1] = '\0';
+
+#define MAX_LENGTH 100
+
+int main() {
+    char input[MAX_LENGTH];
+    char upperCase[MAX_LENGTH];
+    char lowerCase[MAX_LENGTH];
+    int length;
+    printf("Enter the string (less than 100 characters): ");
+    fgets(input, MAX_LENGTH, stdin);
+
+    size_t inputLength = strlen(input);
+    if (input[inputLength - 1] == '\n') {
+        input[inputLength - 1] = '\0';
+        inputLength--;
     }
-    size = strlen(string);
-    printf("Length : %d, ", size);
-    printf("Original string : %s, ", string);
-    for(int i = 0; i < size; i++){
-        if(string[i] >= 'a' && string[i] <= 'z'){
-            upper[i] = string[i] - 32;
-        }
-        else{
-            upper[i] = string[i];
-        }
-    }
-    upper[size] = '\0';
-    printf("Upper : %s, ", upper);
-    for(int i = 0; i < size; i++){
-        if(string[i] >= 'A' && string[i] <= 'Z'){
-            lower[i] = string[i] + 32;
-        }
-        else{
-            lower[i] = string[i];
+
+    length = inputLength;
+
+    printf("Length: %d\n", length);
+    printf("Original string: %s\n", input);
+    for (int i = 0; i < length; i++) {
+        if (input[i] >= 'a' && input[i] <= 'z') {
+            upperCase[i] = input[i] - 32;
+        } else {
+            upperCase[i] = input[i];
         }
     }
-    lower[size] = '\0';
-    printf("Lower : %s\n", lower);
+    upperCase[length] = '\0';
+    printf("Uppercase: %s\n", upperCase);
+
+    for (int i = 0; i < length; i++) {
+        if (input[i] >= 'A' && input[i] <= 'Z') {
+            lowerCase[i] = input[i] + 32;
+        } else {
+            lowerCase[i] = input[i];
+        }
+    }
+    lowerCase[length] = '\0';
+    printf("Lowercase: %s\n", lowerCase);
+
+    return 0;
 }
