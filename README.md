@@ -1,5 +1,5 @@
 
-<h2 align="center">Week 2 Day 1 (23/06/2025)</h2>
+<h2 align="center"> Day 8 (23/06/2025)</h2>
 
 ## 1. String Length and Basics
 A problem that introduces fundamental string operations including length calculation and case conversion.
