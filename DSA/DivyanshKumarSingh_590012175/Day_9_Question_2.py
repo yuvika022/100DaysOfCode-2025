@@ -1,22 +1,19 @@
-def count_vowels_consonants(text):
+def cntVowelsConsonants(text):
     vowels = "aeiou"
-    vowel_count = 0
-    consonant_count = 0
+    vc = 0
+    cc = 0
 
     for char in text:
-        if char.isalpha():  # Check if the character is a letter
+        if char.isalpha():  
             if char.lower() in vowels:
-                vowel_count += 1
+                vc += 1
             else:
-                consonant_count += 1
+                cc += 1
 
-    return vowel_count, consonant_count
+    return vc, cc
 
-# Take input from the user
-user_input = input("Enter a string: ")
+inp = input("Enter a string: ")
 
-# Get the counts
-vowels, consonants = count_vowels_consonants(user_input)
+vowels, consonants = cntVowelsConsonants(inp)
 
-# Display the result
 print(f"Vowels: {vowels}, Consonants: {consonants}")
