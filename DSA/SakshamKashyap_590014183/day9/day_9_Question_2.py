@@ -1,5 +1,6 @@
 # program to count Vowels and Consonant
 
+#prompt the user to enter the string.
 User_str = input("Enter the string: ").strip()
 
 Vowels = 0

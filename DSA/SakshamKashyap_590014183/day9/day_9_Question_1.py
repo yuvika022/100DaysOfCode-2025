@@ -1,4 +1,4 @@
-#prompt the user to enter the element of array(only alphabetic character)
+#prompt the user to enter the string(only alphabetic character).
 
 User_string = input("Enter the string which you want to check palindrome: ")
 
