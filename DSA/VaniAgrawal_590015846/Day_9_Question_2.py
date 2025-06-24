@@ -1,13 +1,16 @@
 #Count vowels and consonants separately, ignoring non-alphabetic characters.
-string=input("enter string :")
-vowels=["a","e","i","o","u"]
-length=len(string)
-vow=0
+string = input("Enter string: ").lower()
+vowels = ["a", "e", "i", "o", "u"]
+vow = 0
+cons = 0
 
-for i in string:
-    for vowel in vowels:
-        if i==vowel:
-            vow=vow+1
-consonant=length-vow
-print(f"Vowel:{vow},consonant:{consonant}")
+for ch in string:
+    if ch.isalpha():
+        if ch in vowels:
+            vow += 1
+        else:
+            cons += 1
+
+print(f"Vowels: {vow}, Consonants: {cons}")
+
         
