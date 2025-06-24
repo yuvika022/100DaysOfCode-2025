@@ -1,30 +1,25 @@
-def compare_strings(s1, s2):
-    # Exact equality
+def cmpstr(s1, s2):
     if s1 == s2:
-        equality = "Equal"
+        eq = "Equal"
     else:
-        equality = "Not equal"
+        eq = "Not equal"
     
-    # Case-insensitive equality
     if s1.lower() == s2.lower():
-        case_insensitive = "Equal ignoring case"
+        caseSensi = "Equal ignoring case"
     else:
-        case_insensitive = "Not equal ignoring case"
+        caseSensi = "Not equal ignoring case"
 
-    # Lexicographical comparison
     if s1 == s2:
-        lex_order = "Strings are identical"
+        order = "Strings are identical"
     elif s1 < s2:
-        lex_order = f'"{s1}" comes before "{s2}"'
+        order = f'"{s1}" comes before "{s2}"'
     else:
-        lex_order = f'"{s2}" comes before "{s1}"'
+        order = f'"{s2}" comes before "{s1}"'
 
-    return equality, case_insensitive, lex_order
+    return eq, caseSensi, order
 
-# Take input from the user and trim leading/trailing spaces
-str1 = input("Enter first string: ").strip()
-str2 = input("Enter second string: ").strip()
+s1 = input("Enter first string: ").strip()
+s2 = input("Enter second string: ").strip()
 
-# Compare and display results
-eq, ci_eq, order = compare_strings(str1, str2)
-print(f"{eq}, {ci_eq}, {order}")
+eq, caseSensi, order = cmpstr(s1, s2)
+print(f"{eq}, {caseSensi}, {order}")
