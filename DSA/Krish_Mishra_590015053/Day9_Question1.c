@@ -3,7 +3,6 @@
 char string[100];
 int size;
 int pal = 1;
-
 int main(){
     printf("Enter the string (Less than 100 characters): ");
     fgets(string, 100, stdin);
@@ -20,14 +19,11 @@ int main(){
             break;
         }
     }
-
     if(pal == 0){
         printf("False");
     }
     else{
         printf("True");
     }
-
     return 0;
-
 }
