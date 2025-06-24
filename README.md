@@ -1,120 +1,130 @@
 
-<h2 align="center">Week 1 Day 1 (16/06/2025)</h2>
+<h2 align="center">Day 9 (24/06/2025)</h2>
 
+## 1. Check Palindrome
+A problem that teaches palindrome detection using string comparison and case-insensitive analysis.
 
-## 1. Replace All Negative Numbers with Zero
-A basic array manipulation problem that introduces conditional element modification.
+A **palindrome** is a word, phrase, or sequence that reads the same forward and backward. Write a program that checks whether a given string is a palindrome or not. For this basic version, consider only alphabetic characters and **ignore case sensitivity**. Return `true` if the string is a palindrome, `false` otherwise.
 
-Given an array `nums` of size `n`, replace all negative numbers in the array with zero. Return the modified array.
-
-This problem introduces you to **array traversal** and **conditional modification of elements**, which are fundamental skills in array manipulation and data processing.
-
-**Your task:** Replace all negative numbers in the array with zero and return the modified array.
+**Your task:** Check if a string is a palindrome (case-insensitive, alphabetic characters only).
 
 ### Examples
 
 **Input:**
 ```
-nums = [-1, 2, -3, 4, 5]
+"racecar"
 ```
 **Output:**
 ```
-[0, 2, 0, 4, 5]
+true
 ```
 
 ---
 
 **Input:**
 ```
-nums = [0, -5, -10]
+"hello"
 ```
 **Output:**
 ```
-[0, 0, 0]
+false
 ```
 
 ---
 
 **Input:**
 ```
-nums = [1, 2, 3, 4]
+"Madam"
 ```
 **Output:**
 ```
-[1, 2, 3, 4]
+true
 ```
 
 ---
 
-## 2. Missing and Repeated
-A problem that requires finding a missing number and a duplicate number in an array.
+## 2. Count Vowels and Consonants
+A problem that teaches character classification and frequency analysis in text processing.
 
-Given an unsorted array of size `n`. Array elements are in the range of `1` to `n`. One number from set `{1, 2, ...n}` is **missing** and one number **occurs twice** in the array. The task is to find these two numbers.
+Write a program that takes a string as input and counts the number of **vowels** (a, e, i, o, u) and **consonants** separately. Consider both uppercase and lowercase letters. **Ignore any non-alphabetic characters** like numbers, spaces, or special symbols.
 
-**Your task:** Find the missing number and the number that appears twice in the array.
+This helps in **text analysis** and understanding the **composition of words**.
+
+**Your task:** Count vowels and consonants separately, ignoring non-alphabetic characters.
 
 ### Examples
 
 **Input:**
 ```
-[3, 1, 3]
+"hello"
 ```
 **Output:**
 ```
-Missing: 2, Twice: 3
+Vowels: 2, Consonants: 3
 ```
 
 ---
 
 **Input:**
 ```
-[4, 3, 6, 2, 1, 1]
+"Programming"
 ```
 **Output:**
 ```
-Missing: 5, Twice: 1
+Vowels: 3, Consonants: 8
 ```
 
 ---
 
-## 3. Sum of Array Elements
-A fundamental array operation that calculates the total sum of all elements.
+**Input:**
+```
+"aeiou"
+```
+**Output:**
+```
+Vowels: 5, Consonants: 0
+```
 
-Given an array of integers, write a program that calculates and returns the **sum of all elements** in the array.
+---
 
-This is one of the most fundamental array operations where you need to **traverse through each element** and **accumulate their values**. This type of operation is commonly used in mathematical calculations and data analysis.
+## 3. Find First Non-Repeating Character
+A problem that combines character frequency analysis with string traversal techniques.
 
-**Your task:** Calculate and return the sum of all elements in the array.
+Given a string, find the **first character** that appears **only once** in the string. If all characters repeat or the string is empty, return a special indicator like `-1` or `None`.
+
+This problem is commonly used in interviews and helps understand **character frequency analysis** and **string traversal techniques**.
+
+**Your task:** Find the first character that appears only once, or return -1 if none exists.
 
 ### Examples
 
 **Input:**
 ```
-[1, 2, 3, 4, 5]
+"programming"
 ```
 **Output:**
 ```
-15
+'p'
 ```
 
 ---
 
 **Input:**
 ```
-[10, 20, 30]
+"aabbcc"
 ```
 **Output:**
 ```
-60
+-1
 ```
 
 ---
 
 **Input:**
 ```
-[7, 3, 9, 1, 6]
+"abccba"
 ```
 **Output:**
 ```
-26
+-1
 ```
