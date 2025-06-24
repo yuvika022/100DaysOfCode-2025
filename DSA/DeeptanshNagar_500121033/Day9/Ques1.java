@@ -1,13 +1,13 @@
 // DAY 9 <-----/---> QUE 1
 
+
 import java.util.Scanner;
 
 public class Ques1 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter the string: ");
-        String input = sc.nextLine();
-
+        String input = sc.nextLine().toLowerCase();
         boolean isPalindrome = true;
         int size = input.length();
 
@@ -19,9 +19,9 @@ public class Ques1 {
         }
 
         if (isPalindrome) {
-            System.out.println("True");
+            System.out.println("true");
         } else {
-            System.out.println("False");
+            System.out.println("false");
         }
         sc.close();
     }
