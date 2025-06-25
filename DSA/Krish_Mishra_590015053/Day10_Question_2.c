@@ -10,25 +10,20 @@ void removeAllSpaces(char str[], char result[]) {
     }
     result[j] = '\0';
 }
-
 void trimSpaces(char str[], char result[]) {
     int start = 0, end = strlen(str) - 1;
-
     while (str[start] == ' ')
         start++;
     while (str[end] == ' ')
         end--;
-
     int j = 0;
     for (int i = start; i <= end; i++)
         result[j++] = str[i];
     result[j] = '\0';
 }
-
 void singleSpaces(char str[], char result[]) {
     int i = 0, j = 0;
     int inWord = 0;
-
     while (str[i] != '\0') {
         if (str[i] != ' ') {
             result[j++] = str[i];
@@ -41,7 +36,6 @@ void singleSpaces(char str[], char result[]) {
         }
         i++;
     }
-
     if (j > 0 && result[j - 1] == ' ')
         j--;
 
