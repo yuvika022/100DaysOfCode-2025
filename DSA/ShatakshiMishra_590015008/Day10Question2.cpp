@@ -3,7 +3,7 @@
 #include <cctype>
 using namespace std;
 
-string removeAllSpaces(const string& str) {
+string removeAllSpaces(string& str) {
     string result;
     for (char c : str) {
         if (c != ' ')
@@ -12,7 +12,7 @@ string removeAllSpaces(const string& str) {
     return result;
 }
 
-string trimSpaces(const string& str) {
+string trimSpaces(string& str) {
     size_t start = str.find_first_not_of(' ');
     size_t end = str.find_last_not_of(' ');
     
@@ -20,7 +20,7 @@ string trimSpaces(const string& str) {
     return str.substr(start, end - start + 1);
 }
 
-string reduceToSingleSpaces(const string& str) {
+string reduceToSingleSpaces(string& str) {
     string trimmed = trimSpaces(str);
     string result;
     bool inSpace = false;
