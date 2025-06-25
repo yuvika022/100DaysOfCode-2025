@@ -3,7 +3,7 @@
 #include <algorithm>
 using namespace std;
 
-string toLower(const string& str) {
+string toLower(string& str) {
     string lowerStr = str;
     transform(lowerStr.begin(), lowerStr.end(), lowerStr.begin(), ::tolower);
     return lowerStr;
