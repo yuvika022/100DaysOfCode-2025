@@ -1,120 +1,131 @@
+<h2 align="center">Day 10 (25/06/2025)</h2>
 
-<h2 align="center">Week 1 Day 1 (16/06/2025)</h2>
+## 1. String Comparison
+A problem that teaches comprehensive string comparison operations and lexicographical ordering.
 
+Write a program that compares two strings and determines their relationship. Check if the strings are **exactly equal**, **equal when ignoring case**, or **completely different**. Also determine which string comes first **alphabetically** (lexicographically).
 
-## 1. Replace All Negative Numbers with Zero
-A basic array manipulation problem that introduces conditional element modification.
+This helps understand **string comparison operations** which are fundamental in **sorting and searching algorithms**.
 
-Given an array `nums` of size `n`, replace all negative numbers in the array with zero. Return the modified array.
-
-This problem introduces you to **array traversal** and **conditional modification of elements**, which are fundamental skills in array manipulation and data processing.
-
-**Your task:** Replace all negative numbers in the array with zero and return the modified array.
+**Your task:** Compare two strings for exact equality, case-insensitive equality, and lexicographical order.
 
 ### Examples
 
 **Input:**
 ```
-nums = [-1, 2, -3, 4, 5]
+String1: "Hello", String2: "hello"
 ```
 **Output:**
 ```
-[0, 2, 0, 4, 5]
+Not equal, Equal ignoring case, "Hello" comes before "hello"
 ```
 
 ---
 
 **Input:**
 ```
-nums = [0, -5, -10]
+String1: "apple", String2: "banana"
 ```
 **Output:**
 ```
-[0, 0, 0]
+Not equal, Not equal ignoring case, "apple" comes before "banana"
 ```
 
 ---
 
 **Input:**
 ```
-nums = [1, 2, 3, 4]
+String1: "test", String2: "test"
 ```
 **Output:**
 ```
-[1, 2, 3, 4]
+Equal, Equal ignoring case, Strings are identical
 ```
 
 ---
 
-## 2. Missing and Repeated
-A problem that requires finding a missing number and a duplicate number in an array.
+## 2. Remove Spaces
+A problem that demonstrates different types of string cleaning operations used in data processing.
 
-Given an unsorted array of size `n`. Array elements are in the range of `1` to `n`. One number from set `{1, 2, ...n}` is **missing** and one number **occurs twice** in the array. The task is to find these two numbers.
+Create a function that **removes all spaces** from a given string and returns the result. Additionally, provide a version that removes only **leading and trailing spaces** (trim), and another that removes **extra spaces between words** (leaving only single spaces).
 
-**Your task:** Find the missing number and the number that appears twice in the array.
+This demonstrates different types of **string cleaning operations** commonly used in **data processing**.
+
+**Your task:** Implement three space removal operations: all spaces, trim, and single spaces.
 
 ### Examples
 
 **Input:**
 ```
-[3, 1, 3]
+" hello world "
 ```
 **Output:**
 ```
-Missing: 2, Twice: 3
+Remove all: "helloworld", Trim: "hello world", Single spaces: "hello world"
 ```
 
 ---
 
 **Input:**
 ```
-[4, 3, 6, 2, 1, 1]
+"programming is fun"
 ```
 **Output:**
 ```
-Missing: 5, Twice: 1
+Remove all: "programmingisfun", Trim: "programming is fun", Single spaces: "programming is fun"
 ```
 
 ---
 
-## 3. Sum of Array Elements
-A fundamental array operation that calculates the total sum of all elements.
+**Input:**
+```
+" a b c "
+```
+**Output:**
+```
+Remove all: "abc", Trim: "a b c", Single spaces: "a b c"
+```
 
-Given an array of integers, write a program that calculates and returns the **sum of all elements** in the array.
+---
 
-This is one of the most fundamental array operations where you need to **traverse through each element** and **accumulate their values**. This type of operation is commonly used in mathematical calculations and data analysis.
+## 3. Check Anagram
+A problem that teaches character frequency analysis and comparison techniques for anagram detection.
 
-**Your task:** Calculate and return the sum of all elements in the array.
+Two strings are **anagrams** if they contain the same characters with the same frequency, but possibly in different order. Write a program to check if two given strings are anagrams of each other. **Ignore case and spaces** for this comparison.
+
+This problem helps understand **character frequency analysis** and **comparison techniques**.
+
+**Your task:** Check if two strings are anagrams (ignore case and spaces).
 
 ### Examples
 
 **Input:**
 ```
-[1, 2, 3, 4, 5]
+String1: "listen", String2: "silent"
 ```
 **Output:**
 ```
-15
+true
 ```
 
 ---
 
 **Input:**
 ```
-[10, 20, 30]
+String1: "hello", String2: "world"
 ```
 **Output:**
 ```
-60
+false
 ```
 
 ---
 
 **Input:**
 ```
-[7, 3, 9, 1, 6]
+String1: "The Eyes", String2: "They See"
 ```
 **Output:**
 ```
-26
+true
 ```
