@@ -1,4 +1,4 @@
-def function(str1, str2):
+def function(str1, str2):          
     cleaned1 = ''.join(str1.lower().split())
     cleaned2 = ''.join(str2.lower().split())
 
