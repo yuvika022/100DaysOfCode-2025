@@ -1,107 +1,19 @@
-<h2 align="center">Day 10 (25/06/2025)</h2>
+<h2 align="center">Day 11 (26/06/2025)</h2>
 
-## 1. String Comparison
-A problem that teaches comprehensive string comparison operations and lexicographical ordering.
+## 1. Palindrome Ignoring Spaces and Punctuation
+A problem that teaches advanced palindrome checking with real-world text processing considerations.
 
-Write a program that compares two strings and determines their relationship. Check if the strings are **exactly equal**, **equal when ignoring case**, or **completely different**. Also determine which string comes first **alphabetically** (lexicographically).
+Write an advanced palindrome checker that **ignores spaces, punctuation marks, and case sensitivity**. This means "A man, a plan, a canal: Panama" should be recognized as a palindrome. Your program should only consider **alphabetic and numeric characters** for the palindrome check, making it more practical for **real-world text analysis**.
 
-This helps understand **string comparison operations** which are fundamental in **sorting and searching algorithms**.
+This helps understand **character filtering and normalization** techniques commonly used in **text processing and natural language processing**.
 
-**Your task:** Compare two strings for exact equality, case-insensitive equality, and lexicographical order.
-
-### Examples
-
-**Input:**
-```
-String1: "Hello", String2: "hello"
-```
-**Output:**
-```
-Not equal, Equal ignoring case, "Hello" comes before "hello"
-```
-
----
-
-**Input:**
-```
-String1: "apple", String2: "banana"
-```
-**Output:**
-```
-Not equal, Not equal ignoring case, "apple" comes before "banana"
-```
-
----
-
-**Input:**
-```
-String1: "test", String2: "test"
-```
-**Output:**
-```
-Equal, Equal ignoring case, Strings are identical
-```
-
----
-
-## 2. Remove Spaces
-A problem that demonstrates different types of string cleaning operations used in data processing.
-
-Create a function that **removes all spaces** from a given string and returns the result. Additionally, provide a version that removes only **leading and trailing spaces** (trim), and another that removes **extra spaces between words** (leaving only single spaces).
-
-This demonstrates different types of **string cleaning operations** commonly used in **data processing**.
-
-**Your task:** Implement three space removal operations: all spaces, trim, and single spaces.
+**Your task:** Check if a string is a palindrome ignoring spaces, punctuation, and case.
 
 ### Examples
 
 **Input:**
 ```
-" hello world "
-```
-**Output:**
-```
-Remove all: "helloworld", Trim: "hello world", Single spaces: "hello world"
-```
-
----
-
-**Input:**
-```
-"programming is fun"
-```
-**Output:**
-```
-Remove all: "programmingisfun", Trim: "programming is fun", Single spaces: "programming is fun"
-```
-
----
-
-**Input:**
-```
-" a b c "
-```
-**Output:**
-```
-Remove all: "abc", Trim: "a b c", Single spaces: "a b c"
-```
-
----
-
-## 3. Check Anagram
-A problem that teaches character frequency analysis and comparison techniques for anagram detection.
-
-Two strings are **anagrams** if they contain the same characters with the same frequency, but possibly in different order. Write a program to check if two given strings are anagrams of each other. **Ignore case and spaces** for this comparison.
-
-This problem helps understand **character frequency analysis** and **comparison techniques**.
-
-**Your task:** Check if two strings are anagrams (ignore case and spaces).
-
-### Examples
-
-**Input:**
-```
-String1: "listen", String2: "silent"
+"A man, a plan, a canal: Panama"
 ```
 **Output:**
 ```
@@ -112,7 +24,7 @@ true
 
 **Input:**
 ```
-String1: "hello", String2: "world"
+"race a car"
 ```
 **Output:**
 ```
@@ -123,9 +35,97 @@ false
 
 **Input:**
 ```
-String1: "The Eyes", String2: "They See"
+"Was it a car or a cat I saw?"
 ```
 **Output:**
 ```
 true
+```
+
+---
+
+## 2. Longest Palindromic Substring
+A problem that combines palindrome detection with substring analysis and demonstrates dynamic programming concepts.
+
+Given a string, find the **longest substring that is a palindrome**. If there are multiple palindromic substrings of the same maximum length, return any one of them. A substring is a **contiguous sequence of characters** within a string.
+
+This problem combines **palindrome detection with substring analysis** and is a classic **dynamic programming problem** that teaches optimal substructure concepts.
+
+**Your task:** Find the longest palindromic substring in a given string.
+
+### Examples
+
+**Input:**
+```
+"babad"
+```
+**Output:**
+```
+"bab" (or "aba")
+```
+
+---
+
+**Input:**
+```
+"cbbd"
+```
+**Output:**
+```
+"bb"
+```
+
+---
+
+**Input:**
+```
+"racecar"
+```
+**Output:**
+```
+"racecar"
+```
+
+---
+
+## 3. Count Palindromic Substrings
+A problem that teaches systematic substring enumeration and palindrome detection techniques.
+
+Write a program that **counts all palindromic substrings** in a given string. A palindromic substring reads the same forward and backward. Count both **odd-length and even-length palindromes**. Single characters are also considered palindromes.
+
+This problem helps understand how to **systematically check all possible substrings** and introduces concepts used in **string pattern matching algorithms**.
+
+**Your task:** Count the total number of palindromic substrings in a string.
+
+### Examples
+
+**Input:**
+```
+"abc"
+```
+**Output:**
+```
+3
+```
+
+---
+
+**Input:**
+```
+"aaa"
+```
+**Output:**
+```
+6
+```
+
+---
+
+**Input:**
+```
+"aba"
+```
+**Output:**
+```
+4
 ```
