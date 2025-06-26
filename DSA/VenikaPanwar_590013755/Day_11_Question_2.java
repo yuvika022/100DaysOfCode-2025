@@ -1,6 +1,6 @@
 import java.util.*;
  
-public class Day_11_Question_2 {
+public class Day_11_Question_2 { 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter a string:");
