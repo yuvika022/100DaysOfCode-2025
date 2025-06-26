@@ -1,8 +1,8 @@
 def countPalindrome(s):
-    n = len(s)  # Length of the input string
-    count = 0   # Initialize count of palindromic substrings
+    n = len(s)  
+    count = 0   
 
-    # Helper function to expand around center and count palindromes
+    
     def expand(l, r):
         nonlocal count
         # Expand as long as the characters at both ends match and are within bounds
