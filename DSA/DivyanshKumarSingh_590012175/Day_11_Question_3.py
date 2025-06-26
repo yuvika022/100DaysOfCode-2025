@@ -14,9 +14,9 @@ def countPalindrome(s):
     
     for c in range(n):
         expand(c, c)     
-        expand(c, c + 1) # Even-length palindromes centered between c and c+1
+        expand(c, c + 1) 
 
-    return count  # Return total count of palindromic substrings
+    return count  
 
 # Take input from the user
 inp = input("Enter a string: ")
