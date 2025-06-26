@@ -20,5 +20,6 @@ def cmpstr(s1, s2):
 
 s1 = input("Enter first string: ").strip()
 s2 = input("Enter second string: ").strip()
+
 eq, caseSensi, order = cmpstr(s1, s2)
 print(f"{eq}, {caseSensi}, {order}")
