@@ -1,4 +1,4 @@
-public class Question1 {
+public class Day11_Question1 {
     public static boolean isPalindrome(String s) {
         StringBuilder filtered = new StringBuilder();
 
