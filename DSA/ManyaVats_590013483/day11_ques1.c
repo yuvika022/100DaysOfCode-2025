@@ -4,18 +4,15 @@
 #include <stdbool.h>
 
 bool isPalindrome(char str[]) {
-    char cleanStr[1000];  // Filtered string
+    char cleanStr[1000];  
     int j = 0;
 
-    // Step 1: Remove non-alphanumeric and convert to lowercase
     for (int i = 0; str[i] != '\0'; i++) {
         if (isalnum(str[i])) {
             cleanStr[j++] = tolower(str[i]);
         }
     }
-    cleanStr[j] = '\0';  // Null-terminate the cleaned string
-
-    // Step 2: Check if it's a palindrome
+    cleanStr[j] = '\0';  
     int start = 0;
     int end = j - 1;
     while (start < end) {
