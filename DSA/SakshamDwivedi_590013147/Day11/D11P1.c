@@ -1,3 +1,4 @@
+//All the function could've been divided into seperate functions but I will do them next time :)
 #include <stdio.h>
 #include <string.h>
 
