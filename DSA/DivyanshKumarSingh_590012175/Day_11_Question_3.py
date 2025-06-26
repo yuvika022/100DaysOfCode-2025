@@ -7,9 +7,9 @@ def countPalindrome(s):
         nonlocal count
         
         while l >= 0 and r < n and s[l] == s[r]:
-            count += 1  # Valid palindrome found
-            l -= 1      # Move left pointer outward
-            r += 1      # Move right pointer outward
+            count += 1  
+            l -= 1      
+            r += 1      
 
     # Try every possible center for odd and even length palindromes
     for c in range(n):
