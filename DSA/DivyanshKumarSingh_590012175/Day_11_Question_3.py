@@ -11,9 +11,9 @@ def countPalindrome(s):
             l -= 1      
             r += 1      
 
-    # Try every possible center for odd and even length palindromes
+    
     for c in range(n):
-        expand(c, c)     # Odd-length palindromes centered at c
+        expand(c, c)     
         expand(c, c + 1) # Even-length palindromes centered between c and c+1
 
     return count  # Return total count of palindromic substrings
