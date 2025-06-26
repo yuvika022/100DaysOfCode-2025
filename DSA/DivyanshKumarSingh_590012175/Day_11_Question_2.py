@@ -28,6 +28,7 @@ def longestPalindrome(string):
 
     return string[start:start + mlen]
 
+
 inp = input("Enter a string: ")
 
 res = longestPalindrome(inp)
