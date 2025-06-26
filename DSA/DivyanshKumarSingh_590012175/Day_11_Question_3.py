@@ -18,9 +18,7 @@ def countPalindrome(s):
 
     return count  
 
-# Take input from the user
 inp = input("Enter a string: ")
 
-# Compute and print result
 result = countPalindrome(inp)
 print("Total Palindromic Substring:", result)
