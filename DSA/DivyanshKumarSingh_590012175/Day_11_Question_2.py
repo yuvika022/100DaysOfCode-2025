@@ -10,12 +10,14 @@ def longestPalindrome(string):
 
     for i in range(n):
         dp[i][i] = True
+        
 
     for i in range(n - 1):
         if string[i] == string[i + 1]:
             dp[i][i + 1] = True
             start = i
             mlen = 2
+            
 
     for length in range(3, n + 1):
         for i in range(n - length + 1):
@@ -27,6 +29,8 @@ def longestPalindrome(string):
                 mlen = length
 
     return string[start:start + mlen]
+
+
 
 inp = input("Enter a string: ")
 
