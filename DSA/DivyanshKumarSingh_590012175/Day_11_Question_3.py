@@ -5,7 +5,7 @@ def countPalindrome(s):
     
     def expand(l, r):
         nonlocal count
-        # Expand as long as the characters at both ends match and are within bounds
+        
         while l >= 0 and r < n and s[l] == s[r]:
             count += 1  # Valid palindrome found
             l -= 1      # Move left pointer outward
