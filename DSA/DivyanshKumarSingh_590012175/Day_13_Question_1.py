@@ -1,24 +1,36 @@
+# Function to count words and find the longest word in a string
 def countWords(s):
-    s=s.strip()
+    # Remove leading and trailing whitespaces
+    s = s.strip()
 
+    # If the string is empty after stripping, return 0 words, 'NULL', and length 0
     if not s:
-        return 0,'NULL',0
+        return 0, 'NULL', 0
     
-    words=s.split()
-    m1=0
-    longestWord=''
+    # Split the string into words using default whitespace separator
+    words = s.split()
 
+    # Initialize variables to keep track of the longest word
+    m1 = 0
+    longestWord = ''
+
+    # Iterate through each word
     for w in words:
-        if len(w)>m1:
+        # If current word's length is greater than max so far, update it
+        if len(w) > m1:
             m1 = len(w)
             longestWord = w
 
+    # Return the word count, the longest word, and its length
+    return len(words), longestWord, m1
 
-    return len(words),longestWord,m1
-
+# Take input from user and strip any outer double quotes if entered
 inp = input("Enter a string: ").strip('"')
-WordCount,longestWord,lengthOfLongestWord=countWords(inp)
 
+# Call the function and unpack the results
+WordCount, longestWord, lengthOfLongestWord = countWords(inp)
+
+# Display the results in formatted output
 print(f"Word Count: {WordCount}")
 print(f"Longest Word: \"{longestWord}\"")
-print(f"Length of Longest Word: {lengthOfLongestWord}")
+print(f"Length of Longest Word: {lengthO
