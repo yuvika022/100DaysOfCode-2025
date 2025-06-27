@@ -7,11 +7,13 @@ void removeDuplicates(char* str) {
     int index = 0;
 
     for (int i = 0; str[i] != '\0'; i++) {
+        if (str[i] == '\n') continue;
         if (!seen[(unsigned char)str[i]]) {
             seen[(unsigned char)str[i]] = true;
             str[index++] = str[i];
         }
     }
+
     str[index] = '\0';
     printf("Output: %s\n", str);
 }
@@ -19,7 +21,7 @@ void removeDuplicates(char* str) {
 int main() {
     char input[1000];
     printf("Enter the string: ");
-    scanf("%s", input);
+    fgets(input, sizeof(input), stdin);
     removeDuplicates(input);
     return 0;
 }
