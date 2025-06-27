@@ -3,11 +3,16 @@
 string1 = input("String1: ").strip().lower()
 string2 = input("String2: ").strip().lower()
 
-list_string = list(string1)
-print(list_string)
-rotated_list = [list_string[0]] * len(list_string)
+list_string1 = list(string1)
+rotated_list = [list_string1[0]] * len(list_string1)
 
-for i in range(len(string1)):
-    rotated_list[((len(list_string)-1)+i)%(len(list_string))] = list_string[i]
+list_string2 = list(string2)
 
-print(rotated_list)
+for k in range(len(string1)):
+    for i in range(len(string1)):
+        rotated_list[(k+i)%(len(list_string1))] = list_string1[i]
+    if rotated_list == list_string2:
+        print("true")
+        break
+else:
+    print("false")
