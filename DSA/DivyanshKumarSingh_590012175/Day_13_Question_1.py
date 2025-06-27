@@ -15,10 +15,8 @@ def countWords(s):
 
     return len(words), longestWord, m1
 
-# Take input from user and strip any outer double quotes if entered
 inp = input("Enter a string: ").strip('"')
 
-# Call the function and unpack the results
 WordCount, longestWord, lengthOfLongestWord = countWords(inp)
 
 # Display the results in formatted output
