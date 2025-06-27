@@ -1,19 +1,13 @@
 def countWords(s):
-
     s = s.strip()
 
-    # If the string is empty after stripping, return 0 words, 'NULL', and length 0
     if not s:
         return 0, 'NULL', 0
     
-    # Split the string into words using default whitespace separator
     words = s.split()
-
-    # Initialize variables to keep track of the longest word
     m1 = 0
     longestWord = ''
 
-    # Iterate through each word
     for w in words:
         # If current word's length is greater than max so far, update it
         if len(w) > m1:
