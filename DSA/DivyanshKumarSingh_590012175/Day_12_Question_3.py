@@ -16,11 +16,13 @@ def compress(s):
             compressed.append(s[i - 1] + str(c))
             c = 1  # Reset count for the new character
 
+    # Append the last character and its count
     compressed.append(s[-1] + str(c))
 
+    # Join all compressed parts into a single string
     cs = ''.join(compressed)
 
-    
+    # Return compressed string if it's not longer than the original
     return cs if len(cs) <= len(s) else s
 
 inp = input("Enter a string: ").strip()
