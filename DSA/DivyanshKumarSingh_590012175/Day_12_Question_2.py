@@ -1,6 +1,6 @@
 def remDuplicate(s):
-    seen = set()
-    res = []
+    seen = set() # Set to keep track of characters already encountered
+    res = []     # List to store result with unique characters
 
     for char in s:
         if char not in seen:
