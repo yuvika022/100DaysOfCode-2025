@@ -15,7 +15,6 @@ def isRotation(s1,s2):
 s1 = input("Enter String 1: ")
 s2 = input("Enter String 2: ")
 
-
 # Check and display whether s2 is a rotation of s1
 if isRotation(s1,s2):
     print("true")
