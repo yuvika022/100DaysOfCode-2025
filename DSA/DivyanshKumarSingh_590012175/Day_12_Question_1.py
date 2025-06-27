@@ -11,6 +11,7 @@ def isRotation(s1,s2):
     return s2 in (s1+s1)
 
 
+# Take input from the user
 s1 = input("Enter String 1: ")
 s2 = input("Enter String 2: ")
 
