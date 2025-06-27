@@ -25,5 +25,9 @@ def compress(s):
     # Return compressed string if it's not longer than the original
     return cs if len(cs) <= len(s) else s
 
+
+# Take user input and remove leading/trailing spaces
 inp = input("Enter a string: ").strip()
+
+# Call the compression function and display the result
 print("Compressed String:", compress(inp))
