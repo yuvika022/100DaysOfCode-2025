@@ -1,17 +1,10 @@
-s1 = input("String1: ")
-s2 = input("String2: ")
-if s1 == s2:
-    print("Equal")
-    print("Equal ignoring Case")
-    print("Strings are identical")
+s1 = input("Enter string1: ").lower()
+s2 = input("Enter string2: ").lower()
+if len(s1) != len(s2):
+    print("false")
 else:
-    print("Not equal")
-    if s1.lower() == s2.lower() :
-        print("Equal ignoring Case")
+    both = s1 + s1
+    if s2 in both:
+        print("true")
     else:
-        print("Not equal ignoring case")
-if s1 != s2:
-    if s1>s2:
-        print(f"{s2} comes before {s1}")
-    else:
-        print(f"{s1} comes before {s2}")
+        print("false")
