@@ -12,3 +12,10 @@ void removeDuplicates(char *str) {
     }
     str[j] = '\0';
 }
+int main() {
+    char str[] = "programming";
+    removeDuplicates(str);
+    printf("%s\n", str); 
+    return 0;
+}
+

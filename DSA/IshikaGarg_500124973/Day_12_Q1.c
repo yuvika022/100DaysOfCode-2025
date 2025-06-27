@@ -10,3 +10,7 @@ int isRotation(const char *s1, const char *s2) {
     strcat(tmp, s1);
     return strstr(tmp, s2) != NULL;
 }
+int main() {
+    printf("%d\\n", isRotation("abcde", "cdeab"));
+    return 0;
+}
