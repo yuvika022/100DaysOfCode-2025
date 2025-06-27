@@ -1,6 +1,5 @@
-# Function to count words and find the longest word in a string
 def countWords(s):
-    # Remove leading and trailing whitespaces
+
     s = s.strip()
 
     # If the string is empty after stripping, return 0 words, 'NULL', and length 0
