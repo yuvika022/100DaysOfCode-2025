@@ -3,6 +3,7 @@ def isPalindrome(str):
 
     return s==s[::-1]
 
+
 inp=input("Enter a string: ")
 
 if (isPalindrome(inp)):
