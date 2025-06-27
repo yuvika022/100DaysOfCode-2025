@@ -8,14 +8,11 @@ void longestPalindromicSubstring(char* str) {
         printf("Empty string.\n");
         return;
     }
-
     bool dp[n][n];
     int maxLength = 1;
     int start = 0;
-
     for (int i = 0; i < n; i++)
         dp[i][i] = true;
-
     for (int i = 0; i < n - 1; i++) {
         if (str[i] == str[i + 1]) {
             dp[i][i + 1] = true;
@@ -25,7 +22,6 @@ void longestPalindromicSubstring(char* str) {
             dp[i][i + 1] = false;
         }
     }
-
     for (int len = 3; len <= n; len++) {
         for (int i = 0; i <= n - len; i++) {
             int j = i + len - 1;
@@ -40,7 +36,6 @@ void longestPalindromicSubstring(char* str) {
             }
         }
     }
-
     printf("Longest Palindromic Substring: ");
     for (int i = start; i < start + maxLength; i++)
         printf("%c", str[i]);
