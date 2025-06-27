@@ -1,19 +1,19 @@
-<h2 align="center">Day 11 (26/06/2025)</h2>
+<h2 align="center">Day 12 (27/06/2025)</h2>
 
-## 1. Palindrome Ignoring Spaces and Punctuation
-A problem that teaches advanced palindrome checking with real-world text processing considerations.
+## 1. String Rotation
+A problem that teaches efficient string pattern matching and rotation detection without brute force enumeration.
 
-Write an advanced palindrome checker that **ignores spaces, punctuation marks, and case sensitivity**. This means "A man, a plan, a canal: Panama" should be recognized as a palindrome. Your program should only consider **alphabetic and numeric characters** for the palindrome check, making it more practical for **real-world text analysis**.
+Write a function to check if one string is a **rotation of another string**. A string rotation means you can move characters from the beginning of the string to the end. For example, "abcde" rotated becomes "cdeab" if you move "ab" to the end. Use an **efficient method** to solve this without generating all possible rotations.
 
-This helps understand **character filtering and normalization** techniques commonly used in **text processing and natural language processing**.
+This helps understand **string concatenation techniques** and **pattern matching algorithms** used in **text processing and search operations**.
 
-**Your task:** Check if a string is a palindrome ignoring spaces, punctuation, and case.
+**Your task:** Check if one string is a rotation of another using an efficient approach.
 
 ### Examples
 
 **Input:**
 ```
-"A man, a plan, a canal: Panama"
+String1: "abcde", String2: "cdeab"
 ```
 **Output:**
 ```
@@ -24,7 +24,7 @@ true
 
 **Input:**
 ```
-"race a car"
+String1: "hello", String2: "world"
 ```
 **Output:**
 ```
@@ -35,7 +35,7 @@ false
 
 **Input:**
 ```
-"Was it a car or a cat I saw?"
+String1: "waterbottle", String2: "erbottlewat"
 ```
 **Output:**
 ```
@@ -44,60 +44,71 @@ true
 
 ---
 
-## 2. Longest Palindromic Substring
-A problem that combines palindrome detection with substring analysis and demonstrates dynamic programming concepts.
+## 2. Remove Duplicate Characters
+A problem that demonstrates character tracking and efficient string building techniques for data cleaning.
 
-Given a string, find the **longest substring that is a palindrome**. If there are multiple palindromic substrings of the same maximum length, return any one of them. A substring is a **contiguous sequence of characters** within a string.
+Given a string, **remove all duplicate characters** and return a string with only unique characters in their **first occurrence order**. For example, if the input is "programming", the output should be "progamin" because 'r' and 'm' appear multiple times.
 
-This problem combines **palindrome detection with substring analysis** and is a classic **dynamic programming problem** that teaches optimal substructure concepts.
+This problem helps understand **character tracking and string building techniques** commonly used in **data preprocessing and text normalization**.
 
-**Your task:** Find the longest palindromic substring in a given string.
+**Your task:** Remove duplicate characters while preserving first occurrence order.
+
+### Examples
+
+**Input:**
+```
+"programming"
+```
+**Output:**
+```
+"progamin"
+```
+
+---
+
+**Input:**
+```
+"hello"
+```
+**Output:**
+```
+"helo"
+```
+
+---
+
+**Input:**
+```
+"aabbcc"
+```
+**Output:**
+```
+"abc"
+```
+
+---
+
+## 3. Compress String
+A problem that introduces basic compression algorithms and teaches run-length encoding concepts.
+
+Implement a **basic string compression algorithm** that replaces repeated characters with the character followed by the **count of repetitions**. For example, "aabcccccaaa" becomes "a2b1c5a3". If the compressed string is not smaller than the original string, return the original string.
+
+This introduces **basic compression concepts** and **run-length encoding** techniques used in **data compression and storage optimization**.
+
+**Your task:** Compress strings using character count encoding with size optimization.
 
 ### Examples
 
 **Input:**
 ```
-"babad"
+"aabcccccaaa"
 ```
 **Output:**
 ```
-"bab" (or "aba")
+"a2b1c5a3"
 ```
 
 ---
-
-**Input:**
-```
-"cbbd"
-```
-**Output:**
-```
-"bb"
-```
-
----
-
-**Input:**
-```
-"racecar"
-```
-**Output:**
-```
-"racecar"
-```
-
----
-
-## 3. Count Palindromic Substrings
-A problem that teaches systematic substring enumeration and palindrome detection techniques.
-
-Write a program that **counts all palindromic substrings** in a given string. A palindromic substring reads the same forward and backward. Count both **odd-length and even-length palindromes**. Single characters are also considered palindromes.
-
-This problem helps understand how to **systematically check all possible substrings** and introduces concepts used in **string pattern matching algorithms**.
-
-**Your task:** Count the total number of palindromic substrings in a string.
-
-### Examples
 
 **Input:**
 ```
@@ -105,27 +116,16 @@ This problem helps understand how to **systematically check all possible substri
 ```
 **Output:**
 ```
-3
+"abc"
 ```
 
 ---
 
 **Input:**
 ```
-"aaa"
+"aabbcc"
 ```
 **Output:**
 ```
-6
-```
-
----
-
-**Input:**
-```
-"aba"
-```
-**Output:**
-```
-4
+"a2b2c2"
 ```

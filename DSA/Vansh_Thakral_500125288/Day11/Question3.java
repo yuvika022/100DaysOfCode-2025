@@ -1,15 +1,4 @@
-
-import java.util.*;
-
-class Q3 {
-
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        System.out.print("Enter a substring: ");
-        String s = sc.nextLine();
-        System.out.println("Total palindromic substrings: " + countSubstrings(s));
-    }
-
+public class Question3 {
     public static int countSubstrings(String s) {
         int count = 0;
         int n = s.length();
@@ -26,5 +15,11 @@ class Q3 {
         }
 
         return count;
+    }
+
+    public static void main(String[] args) {
+        System.out.println(countSubstrings("abc")); // 3
+        System.out.println(countSubstrings("aaa")); // 6
+        System.out.println(countSubstrings("aba")); // 4
     }
 }
