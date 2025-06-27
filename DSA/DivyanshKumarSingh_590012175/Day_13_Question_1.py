@@ -15,11 +15,11 @@ def countWords(s):
 
     return len(words), longestWord, m1
 
+
 inp = input("Enter a string: ").strip('"')
 
 WordCount, longestWord, lengthOfLongestWord = countWords(inp)
 
-# Display the results in formatted output
 print(f"Word Count: {WordCount}")
 print(f"Longest Word: \"{longestWord}\"")
 print(f"Length of Longest Word: {lengthO
