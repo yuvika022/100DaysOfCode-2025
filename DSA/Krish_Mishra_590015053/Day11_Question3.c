@@ -15,10 +15,8 @@ int countPalindromicSubstrings(char* str) {
             right++;
         }
     }
-
     return count;
 }
-
 int main() {
     char input[1000];
     printf("Enter the string: ");
