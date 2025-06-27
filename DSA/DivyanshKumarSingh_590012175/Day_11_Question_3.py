@@ -2,7 +2,6 @@ def countPalindrome(s):
     n = len(s)  
     count = 0   
 
-    
     def expand(l, r):
         nonlocal count
         
@@ -11,12 +10,12 @@ def countPalindrome(s):
             l -= 1      
             r += 1      
 
-    
     for c in range(n):
         expand(c, c)     
         expand(c, c + 1) 
 
     return count  
+
 
 inp = input("Enter a string: ")
 
