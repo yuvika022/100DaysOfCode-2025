@@ -1,5 +1,6 @@
 import java.util.Scanner;
-public class Q1 {
+
+public class Ques1 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter a string 1: ");
@@ -8,8 +9,8 @@ public class Q1 {
         String cstr = sc.nextLine().trim();
 
         if (str.length() == cstr.length()) {
-            String new_string = cstr + cstr;
-            if (new_string.contains(str)) 
+            String nstr = cstr + cstr;
+            if (nstr.contains(str)) 
             System.out.println("true");
              else 
                 System.out.println("false");
