@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class StringRotation {
+public class Day_12_Question_1 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter String 1:");
