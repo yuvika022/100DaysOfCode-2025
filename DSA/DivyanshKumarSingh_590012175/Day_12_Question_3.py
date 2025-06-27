@@ -1,9 +1,11 @@
 def compress(s):
+    # Return an empty string if input is empty
     if not s:
         return ""
     
-    compressed = []
-    c = 1
+     compressed = []  # List to store compressed parts (character + count)
+     c = 1            # Counter for consecutive characters
+
 
     for i in range(1, len(s)):
         if s[i] == s[i - 1]:
