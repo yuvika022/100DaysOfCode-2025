@@ -17,3 +17,8 @@ void compressString(const char *input) {
     if (strlen(result) < len) printf("%s\n", result);
     else printf("%s\n", input);
 }
+int main() {
+    compressString("aabcccccaaa"); 
+    compressString("abc");        
+    return 0;
+}
