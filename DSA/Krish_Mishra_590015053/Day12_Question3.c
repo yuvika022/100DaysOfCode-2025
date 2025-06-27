@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
-
 void compressString(char* str) {
     int len = strlen(str);
     char compressed[2 * len + 1];
@@ -16,7 +15,6 @@ void compressString(char* str) {
             count = 1;
         }
     }
-
     compressed[index] = '\0';
 
     if (strlen(compressed) < len)
@@ -24,7 +22,6 @@ void compressString(char* str) {
     else
         printf("Output: %s\n", str);
 }
-
 int main() {
     char input[1000];
     printf("Enter the string: ");
