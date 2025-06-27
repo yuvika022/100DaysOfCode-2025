@@ -1,6 +1,6 @@
-import java.util.Scanner;
+import java.util.*;
 
-public class RemoveDuplicates {
+public class Day_12_Question_2 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter a string:");
