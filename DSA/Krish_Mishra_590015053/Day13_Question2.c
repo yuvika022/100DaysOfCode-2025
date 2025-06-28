@@ -1,6 +1,3 @@
-
-Your task: Check if any permutation of a string can form a palindrome.
-
 def can_form_palindrome(word):
     count = {}
 
