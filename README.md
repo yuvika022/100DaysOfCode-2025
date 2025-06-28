@@ -1,18 +1,63 @@
+<h2 align="center">Day 13 (28/06/2025)</h2>
 
-<h2 align="center">Day 9 (24/06/2025)</h2>
+## 1. Word Count
+A problem that teaches text parsing and analysis techniques commonly used in document processing applications.
 
-## 1. Check Palindrome
-A problem that teaches palindrome detection using string comparison and case-insensitive analysis.
+Write a program that **counts the number of words** in a given string. Words are separated by one or more spaces, and you should handle **leading and trailing spaces** properly. Additionally, find the **longest word** in the string and return both the word count and the longest word.
 
-A **palindrome** is a word, phrase, or sequence that reads the same forward and backward. Write a program that checks whether a given string is a palindrome or not. For this basic version, consider only alphabetic characters and **ignore case sensitivity**. Return `true` if the string is a palindrome, `false` otherwise.
+This is useful for **text analysis and document processing applications** and helps understand **string tokenization and parsing techniques**.
 
-**Your task:** Check if a string is a palindrome (case-insensitive, alphabetic characters only).
+**Your task:** Count words and find the longest word while handling whitespace properly.
 
 ### Examples
 
 **Input:**
 ```
-"racecar"
+"Hello world programming"
+```
+**Output:**
+```
+Word count: 3, Longest word: "programming"
+```
+
+---
+
+**Input:**
+```
+" Java Python C++ "
+```
+**Output:**
+```
+Word count: 3, Longest word: "Python"
+```
+
+---
+
+**Input:**
+```
+"a bb ccc dddd"
+```
+**Output:**
+```
+Word count: 4, Longest word: "dddd"
+```
+
+---
+
+## 2. Palindrome Permutation
+A problem that combines character frequency analysis with palindrome properties for advanced text processing.
+
+Given a string, determine if any **permutation (rearrangement)** of the string can form a palindrome. You don't need to generate the palindrome, just check if it's possible. For a string to form a palindrome, **at most one character can have an odd frequency**.
+
+This problem combines **character frequency analysis with palindrome properties** and teaches important concepts used in **combinatorial string algorithms**.
+
+**Your task:** Check if any permutation of a string can form a palindrome.
+
+### Examples
+
+**Input:**
+```
+"aab"
 ```
 **Output:**
 ```
@@ -23,7 +68,7 @@ true
 
 **Input:**
 ```
-"hello"
+"abc"
 ```
 **Output:**
 ```
@@ -34,7 +79,7 @@ false
 
 **Input:**
 ```
-"Madam"
+"aabbcc"
 ```
 **Output:**
 ```
@@ -43,88 +88,44 @@ true
 
 ---
 
-## 2. Count Vowels and Consonants
-A problem that teaches character classification and frequency analysis in text processing.
+## 3. Reverse Words in String
+A problem that combines string parsing with array manipulation for text processing applications.
 
-Write a program that takes a string as input and counts the number of **vowels** (a, e, i, o, u) and **consonants** separately. Consider both uppercase and lowercase letters. **Ignore any non-alphabetic characters** like numbers, spaces, or special symbols.
+Given a string containing multiple words separated by spaces, **reverse the order of the words** but keep each word intact. For example, "Hello World Programming" should become "Programming World Hello". Handle multiple spaces between words by **preserving single spaces** in the output.
 
-This helps in **text analysis** and understanding the **composition of words**.
+This problem combines **string parsing with array/list manipulation** and demonstrates techniques used in **text formatting and document processing**.
 
-**Your task:** Count vowels and consonants separately, ignoring non-alphabetic characters.
-
-### Examples
-
-**Input:**
-```
-"hello"
-```
-**Output:**
-```
-Vowels: 2, Consonants: 3
-```
-
----
-
-**Input:**
-```
-"Programming"
-```
-**Output:**
-```
-Vowels: 3, Consonants: 8
-```
-
----
-
-**Input:**
-```
-"aeiou"
-```
-**Output:**
-```
-Vowels: 5, Consonants: 0
-```
-
----
-
-## 3. Find First Non-Repeating Character
-A problem that combines character frequency analysis with string traversal techniques.
-
-Given a string, find the **first character** that appears **only once** in the string. If all characters repeat or the string is empty, return a special indicator like `-1` or `None`.
-
-This problem is commonly used in interviews and helps understand **character frequency analysis** and **string traversal techniques**.
-
-**Your task:** Find the first character that appears only once, or return -1 if none exists.
+**Your task:** Reverse word order while maintaining word integrity and proper spacing.
 
 ### Examples
 
 **Input:**
 ```
-"programming"
+"Hello World Programming"
 ```
 **Output:**
 ```
-'p'
+"Programming World Hello"
 ```
 
 ---
 
 **Input:**
 ```
-"aabbcc"
+"The quick brown fox"
 ```
 **Output:**
 ```
--1
+"fox brown quick The"
 ```
 
 ---
 
 **Input:**
 ```
-"abccba"
+"Java Python C++"
 ```
 **Output:**
 ```
--1
+"C++ Python Java"
 ```
