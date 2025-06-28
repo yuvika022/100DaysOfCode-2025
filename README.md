@@ -1,19 +1,63 @@
-<h2 align="center">Day 12 (27/06/2025)</h2>
+<h2 align="center">Day 13 (28/06/2025)</h2>
 
-## 1. String Rotation
-A problem that teaches efficient string pattern matching and rotation detection without brute force enumeration.
+## 1. Word Count
+A problem that teaches text parsing and analysis techniques commonly used in document processing applications.
 
-Write a function to check if one string is a **rotation of another string**. A string rotation means you can move characters from the beginning of the string to the end. For example, "abcde" rotated becomes "cdeab" if you move "ab" to the end. Use an **efficient method** to solve this without generating all possible rotations.
+Write a program that **counts the number of words** in a given string. Words are separated by one or more spaces, and you should handle **leading and trailing spaces** properly. Additionally, find the **longest word** in the string and return both the word count and the longest word.
 
-This helps understand **string concatenation techniques** and **pattern matching algorithms** used in **text processing and search operations**.
+This is useful for **text analysis and document processing applications** and helps understand **string tokenization and parsing techniques**.
 
-**Your task:** Check if one string is a rotation of another using an efficient approach.
+**Your task:** Count words and find the longest word while handling whitespace properly.
 
 ### Examples
 
 **Input:**
 ```
-String1: "abcde", String2: "cdeab"
+"Hello world programming"
+```
+**Output:**
+```
+Word count: 3, Longest word: "programming"
+```
+
+---
+
+**Input:**
+```
+" Java Python C++ "
+```
+**Output:**
+```
+Word count: 3, Longest word: "Python"
+```
+
+---
+
+**Input:**
+```
+"a bb ccc dddd"
+```
+**Output:**
+```
+Word count: 4, Longest word: "dddd"
+```
+
+---
+
+## 2. Palindrome Permutation
+A problem that combines character frequency analysis with palindrome properties for advanced text processing.
+
+Given a string, determine if any **permutation (rearrangement)** of the string can form a palindrome. You don't need to generate the palindrome, just check if it's possible. For a string to form a palindrome, **at most one character can have an odd frequency**.
+
+This problem combines **character frequency analysis with palindrome properties** and teaches important concepts used in **combinatorial string algorithms**.
+
+**Your task:** Check if any permutation of a string can form a palindrome.
+
+### Examples
+
+**Input:**
+```
+"aab"
 ```
 **Output:**
 ```
@@ -24,7 +68,7 @@ true
 
 **Input:**
 ```
-String1: "hello", String2: "world"
+"abc"
 ```
 **Output:**
 ```
@@ -35,7 +79,7 @@ false
 
 **Input:**
 ```
-String1: "waterbottle", String2: "erbottlewat"
+"aabbcc"
 ```
 **Output:**
 ```
@@ -44,88 +88,44 @@ true
 
 ---
 
-## 2. Remove Duplicate Characters
-A problem that demonstrates character tracking and efficient string building techniques for data cleaning.
+## 3. Reverse Words in String
+A problem that combines string parsing with array manipulation for text processing applications.
 
-Given a string, **remove all duplicate characters** and return a string with only unique characters in their **first occurrence order**. For example, if the input is "programming", the output should be "progamin" because 'r' and 'm' appear multiple times.
+Given a string containing multiple words separated by spaces, **reverse the order of the words** but keep each word intact. For example, "Hello World Programming" should become "Programming World Hello". Handle multiple spaces between words by **preserving single spaces** in the output.
 
-This problem helps understand **character tracking and string building techniques** commonly used in **data preprocessing and text normalization**.
+This problem combines **string parsing with array/list manipulation** and demonstrates techniques used in **text formatting and document processing**.
 
-**Your task:** Remove duplicate characters while preserving first occurrence order.
-
-### Examples
-
-**Input:**
-```
-"programming"
-```
-**Output:**
-```
-"progamin"
-```
-
----
-
-**Input:**
-```
-"hello"
-```
-**Output:**
-```
-"helo"
-```
-
----
-
-**Input:**
-```
-"aabbcc"
-```
-**Output:**
-```
-"abc"
-```
-
----
-
-## 3. Compress String
-A problem that introduces basic compression algorithms and teaches run-length encoding concepts.
-
-Implement a **basic string compression algorithm** that replaces repeated characters with the character followed by the **count of repetitions**. For example, "aabcccccaaa" becomes "a2b1c5a3". If the compressed string is not smaller than the original string, return the original string.
-
-This introduces **basic compression concepts** and **run-length encoding** techniques used in **data compression and storage optimization**.
-
-**Your task:** Compress strings using character count encoding with size optimization.
+**Your task:** Reverse word order while maintaining word integrity and proper spacing.
 
 ### Examples
 
 **Input:**
 ```
-"aabcccccaaa"
+"Hello World Programming"
 ```
 **Output:**
 ```
-"a2b1c5a3"
+"Programming World Hello"
 ```
 
 ---
 
 **Input:**
 ```
-"abc"
+"The quick brown fox"
 ```
 **Output:**
 ```
-"abc"
+"fox brown quick The"
 ```
 
 ---
 
 **Input:**
 ```
-"aabbcc"
+"Java Python C++"
 ```
 **Output:**
 ```
-"a2b2c2"
+"C++ Python Java"
 ```
