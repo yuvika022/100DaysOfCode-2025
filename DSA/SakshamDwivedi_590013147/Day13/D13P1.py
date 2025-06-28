@@ -5,11 +5,11 @@ def longest_word(string):
     for i in range(len(string)-1):
         if(len(longest) < len(string[i+1])):
             longest = string[i+1]
-    return longest
+    return len(string), longest
 
 #Fixed Input
-print(longest_word("Hello World Programming"))
+print("Word count : ", longest_word("Hello World Programming")[0], "Longest Word : ", longest_word("Hello World Programming")[1])
 
 #Custom Input
 string1 = input("Enter a sentence : ")
-print(longest_word(string1))
+print("Word count : ", longest_word(string1)[0], "Longest Word : ", longest_word(string1)[1])
