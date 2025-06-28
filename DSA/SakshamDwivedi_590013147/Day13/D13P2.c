@@ -1,3 +1,4 @@
+//O(n)
 #include <stdio.h>
 #include <string.h>
 
