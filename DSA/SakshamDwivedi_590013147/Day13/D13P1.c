@@ -1,4 +1,5 @@
 //The reason of using end_point is to overcome the edge case of "  aa bbb cccccc     " ;)
+//O(n)
 #include <stdio.h>
 #include <string.h>
 
