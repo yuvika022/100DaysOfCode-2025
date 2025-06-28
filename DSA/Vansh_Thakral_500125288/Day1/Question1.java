@@ -1,6 +1,6 @@
 import java.util.Arrays;
 
-public class ReplaceNegatives {
+public class Question1 {
     public static int[] replaceNegatives(int[] nums) {
         for (int i = 0; i < nums.length; i++) {
             if (nums[i] < 0) {
