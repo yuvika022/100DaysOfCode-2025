@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class ReverseWords {
+public class Day_13_Question_3 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter a sentence:");
