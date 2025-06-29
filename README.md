@@ -1,117 +1,26 @@
+<h2 align="center">Quiz 2 (29/06/2025)</h2>
 
-<h2 align="center">Week 1 Day 3 (18/06/2025)</h2>
+**Time:** Sunday, 8:00 PM - 9:00 PM (1 Hour)
 
-## 1. K-Frequency Element Sum
-A problem that combines frequency counting with conditional summation of distinct elements.
+## Format
+- MCQs: Submit via Google Form
+- Debugging Questions: Submit to GitHub
 
-Given an array of integers and an integer `k`, find the **sum of all distinct elements** that appear exactly `k` times in the array. Each such element should be included only once in the sum.
-
-**Your task:** Find the sum of all distinct elements that appear exactly k times in the array.
-
-### Examples
-
-**Input:**
+## Repository Structure
 ```
-nums = [2, 3, 9, 9], k = 1
+📁 Quiz_2/
+└── 📁 Your_Name_SapID/
+    ├── Quiz_2_Debugging_Question_1.c / .py
+    └── Quiz_2_Debugging_Question_2.c / .py
 ```
-**Output:**
-```
-5
-```
----
 
-**Input:**
-```
-nums = [1, 8, 8, 8, 5, 6, 2], k = 3
-```
-**Output:**
-```
-8
-```
----
+## Notes
+- Debugging questions may be in C, Python, or one in each language
+- Submit your solution using the same language as given
+- Use the appropriate file extension (.c for C, .py for Python)
+- Follow the folder naming format strictly: Your_Name_SapID
+- Submit within time limit
 
-## 2. Check for Duplicates
-A problem that introduces duplicate detection algorithms and set-based thinking.
-
-Given an array `nums` of size `n`, return `true` if any value appears **more than once**, otherwise return `false`.
-
-This problem introduces you to **duplicate detection algorithms** and teaches you about **set-based thinking** and **comparison operations** within arrays.
-
-**Your task:** Return true if any value appears more than once, otherwise return false.
-
-### Examples
-
-**Input:**
-```
-nums = [1, 2, 3, 4]
-```
-**Output:**
-```
-false
-```
+Good luck!
 
 ---
-
-**Input:**
-```
-nums = [1, 2, 3, 2]
-```
-**Output:**
-```
-true
-```
-
----
-
-**Input:**
-```
-nums = [5, 5, 5]
-```
-**Output:**
-```
-true
-```
-
----
-
-## 3. Find the Second Largest Element
-A problem that teaches about finding extremes in data and handling edge cases.
-
-Given an array `nums` of size `n`, find the **second largest unique element** in the array. If it doesn't exist (e.g., all elements are the same), return `-1`.
-
-This problem teaches you about **finding extremes in data** and **handling edge cases** where the desired element might not exist.
-
-**Your task:** Find the second largest unique element in the array, or return -1 if it doesn't exist.
-
-### Examples
-
-**Input:**
-```
-nums = [10, 20, 30, 40]
-```
-**Output:**
-```
-30
-```
-
----
-
-**Input:**
-```
-nums = [5, 5, 5]
-```
-**Output:**
-```
--1
-```
-
----
-
-**Input:**
-```
-nums = [3, 2, 1]
-```
-**Output:**
-```
-2
-```
