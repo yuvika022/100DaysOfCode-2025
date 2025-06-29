@@ -1,3 +1,5 @@
+#Sarthak Jain 590014936
+
 def is_digits_only(s):
     # Task 1: Bug identified
     # The function returns True if the string is empty ("")
