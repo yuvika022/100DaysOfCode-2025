@@ -1,5 +1,4 @@
-#the correct answer is:
- A) Empty string should return False since it contains no digits
+#the correct answer is:A) Empty string should return False since it contains no digits
 
 def is_digits_only(s):
     if len(s) == 0:
