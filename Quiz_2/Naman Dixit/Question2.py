@@ -1,3 +1,9 @@
+#Answer 1. Bug in the algorithm:
+#The loop iterates over all ASCII characters (0–255) instead of the original string, which breaks the original order.
+
+#Answer 2 - Why it's incorrect:
+#It may return the index of a character that appears later in the string just because it has a lower ASCII value, not the first non-repeating character.
+
 def first_non_repeating(s):
     char_count = {}
 
