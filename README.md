@@ -1,4 +1,4 @@
-<h2 align="center">Quiz 1 (22/06/2025)</h2>
+<h2 align="center">Quiz 2 (29/06/2025)</h2>
 
 **Time:** Sunday, 8:00 PM - 9:00 PM (1 Hour)
 
@@ -8,10 +8,10 @@
 
 ## Repository Structure
 ```
-📁 Quiz_1/
+📁 Quiz_2/
 └── 📁 Your_Name_SapID/
-    ├── Quiz_1_Debugging_Question_1.c / .py
-    └── Quiz_1_Debugging_Question_2.c / .py
+    ├── Quiz_2_Debugging_Question_1.c / .py
+    └── Quiz_2_Debugging_Question_2.c / .py
 ```
 
 ## Notes
@@ -22,3 +22,5 @@
 - Submit within time limit
 
 Good luck!
+
+---
