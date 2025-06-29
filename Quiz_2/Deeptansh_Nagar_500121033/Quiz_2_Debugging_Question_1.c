@@ -5,29 +5,17 @@
 
 // correct option - A) Empty string should return False since it contains no digits
 // correct code - 
-#include <stdio.h>
-#include <ctype.h>
-#include <stdbool.h>
+def check_digits(s):
+    if len(s) == 0:
+        return False  # issue fixed ;o
+    for char in s:
+        if char < '0' or char > '9':
+            return False
+    return True
 
-bool checkDigits(const char *s) {
-    if (s[0] == '\0') {
-        return false; // issue fixed ;o
-    }
-    for (int i = 0; s[i] != '\0'; i++) {
-        if (s[i] < '0' || s[i] > '9') {
-            return false;
-        }
-    }
-    return true;
-}
+# Test cases
+test_cases = ["123", "", "12a3", "007", "abc"]
 
-int main() {
-    const char *test_cases[] = {"123", "", "12a3", "007", "abc"};
-    int num_cases = sizeof(test_cases) / sizeof(test_cases[0]);
-
-    for (int i = 0; i < num_cases; i++) {
-        printf("checkDigits(\"%s\") = %s\n", test_cases[i], checkDigits(test_cases[i]) ? "true" : "false");
-    }
-
-    return 0;
-}
+for test in test_cases:
+    result = check_digits(test)
+    print(f'check_digits("{test}") = {str(result).lower()}')
