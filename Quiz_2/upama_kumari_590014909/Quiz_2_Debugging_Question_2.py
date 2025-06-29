@@ -7,5 +7,5 @@ def first_non_repeating(s):
             return index
     return -1
 
-1.answer-->Looping over char_count  breaks the original string order.
-2.answer-->Dictionaries don’t guarantee the original string order so the non-repeating character found might be wrong
+#1.answer-->Looping over char_count  breaks the original string order.
+#2.answer-->Dictionaries don’t guarantee the original string order so the non-repeating character found might be wrong
