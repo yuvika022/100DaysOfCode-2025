@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class SortByLength {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-
+ 
         System.out.println("Enter number of strings:");
         int n = Integer.parseInt(sc.nextLine());
         String[] arr = new String[n];
