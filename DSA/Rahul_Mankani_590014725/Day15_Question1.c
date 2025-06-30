@@ -10,14 +10,14 @@ int main()
 {
     int arr[100]; 
     int n; 
-    printf("Kitne numbers daaloge: ");
+    printf("Enter the size: ");
     scanf("%d", &n);
     if (n <= 0 || n > 100) 
     {
-        printf("Galat size! 1 se 100 tak daalo.\n");
+        printf("Incorrect Size! Enter data from 1 to 100.\n");
         return 1;
     }
-    printf("Numbers daalo: ");
+    printf("Enter the numbers: ");
     for (int i = 0; i < n; i++) 
     {
         scanf("%d", &arr[i]);
