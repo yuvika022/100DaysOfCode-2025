@@ -1,5 +1,5 @@
 import java.util.*;
-import java.util.Arrays; 
+import java.util.Arrays;  
 
 public class Day_15_Question_1 {
     public static void main(String[] args) {
