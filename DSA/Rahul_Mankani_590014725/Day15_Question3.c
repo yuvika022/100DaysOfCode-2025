@@ -12,7 +12,7 @@ int main()
         printf("Incorrect size! Enter from 1 to 100.\n");
         return 1;
     }
-    printf("Numbers daalo: ");
+    printf("Enter the numbers: ");
     for (int i = 0; i < n; i++) 
     {
         scanf("%d", &arr[i]);
