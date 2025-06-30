@@ -1,7 +1,7 @@
 import java.util.*;
 import java.util.Arrays;
 
-public class SimpleSort {
+public class Day_15_Question_1 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
