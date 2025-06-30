@@ -1,131 +1,131 @@
-<h2 align="center">Day 13 (28/06/2025)</h2>
+<h2 align="center">Day 15 (30/06/2025)</h2>
 
-## 1. Word Count
-A problem that teaches text parsing and analysis techniques commonly used in document processing applications.
+## 1. Simple Array Sorting
+A problem that introduces fundamental sorting concepts and demonstrates how to reorganize data efficiently.
 
-Write a program that **counts the number of words** in a given string. Words are separated by one or more spaces, and you should handle **leading and trailing spaces** properly. Additionally, find the **longest word** in the string and return both the word count and the longest word.
+You are given an array of integers that are in **random order**. Your task is to write a program that sorts this array in **ascending order** from smallest to largest. You can use any **built-in sorting function** available in your programming language to accomplish this task.
 
-This is useful for **text analysis and document processing applications** and helps understand **string tokenization and parsing techniques**.
+The goal is to understand how to apply **basic sorting operations** to reorganize data efficiently and learn the **fundamental concepts of ordering algorithms**.
 
-**Your task:** Count words and find the longest word while handling whitespace properly.
-
-### Examples
-
-**Input:**
-```
-"Hello world programming"
-```
-**Output:**
-```
-Word count: 3, Longest word: "programming"
-```
-
----
-
-**Input:**
-```
-" Java Python C++ "
-```
-**Output:**
-```
-Word count: 3, Longest word: "Python"
-```
-
----
-
-**Input:**
-```
-"a bb ccc dddd"
-```
-**Output:**
-```
-Word count: 4, Longest word: "dddd"
-```
-
----
-
-## 2. Palindrome Permutation
-A problem that combines character frequency analysis with palindrome properties for advanced text processing.
-
-Given a string, determine if any **permutation (rearrangement)** of the string can form a palindrome. You don't need to generate the palindrome, just check if it's possible. For a string to form a palindrome, **at most one character can have an odd frequency**.
-
-This problem combines **character frequency analysis with palindrome properties** and teaches important concepts used in **combinatorial string algorithms**.
-
-**Your task:** Check if any permutation of a string can form a palindrome.
+**Your task:** Sort an integer array in ascending order using built-in sorting functions.
 
 ### Examples
 
 **Input:**
 ```
-"aab"
+[64, 34, 25, 12, 22, 11, 90]
 ```
 **Output:**
 ```
-true
+[11, 12, 22, 25, 34, 64, 90]
 ```
 
 ---
 
 **Input:**
 ```
-"abc"
+[5, 2, 8, 6, 1, 9, 4]
 ```
 **Output:**
 ```
-false
+[1, 2, 4, 5, 6, 8, 9]
 ```
 
 ---
 
 **Input:**
 ```
-"aabbcc"
+[100, 50, 25, 75]
 ```
 **Output:**
 ```
-true
+[25, 50, 75, 100]
 ```
 
 ---
 
-## 3. Reverse Words in String
-A problem that combines string parsing with array manipulation for text processing applications.
+## 2. Sort by String Length
+A problem that demonstrates custom sorting criteria beyond simple numerical or alphabetical ordering.
 
-Given a string containing multiple words separated by spaces, **reverse the order of the words** but keep each word intact. For example, "Hello World Programming" should become "Programming World Hello". Handle multiple spaces between words by **preserving single spaces** in the output.
+You have an array of strings with different lengths, and you need to sort them based on their **character count** rather than alphabetical order. Write a program that arranges the strings from **shortest to longest**. If two strings have the same length, **maintain their original relative order**.
 
-This problem combines **string parsing with array/list manipulation** and demonstrates techniques used in **text formatting and document processing**.
+This problem helps you understand **custom sorting criteria** and **stable sorting concepts** used in **data organization and text processing applications**.
 
-**Your task:** Reverse word order while maintaining word integrity and proper spacing.
+**Your task:** Sort strings by length while preserving relative order for equal-length strings.
 
 ### Examples
 
 **Input:**
 ```
-"Hello World Programming"
+["apple", "pie", "washington", "cat"]
 ```
 **Output:**
 ```
-"Programming World Hello"
+["pie", "cat", "apple", "washington"]
 ```
 
 ---
 
 **Input:**
 ```
-"The quick brown fox"
+["hello", "world", "a", "programming", "fun"]
 ```
 **Output:**
 ```
-"fox brown quick The"
+["a", "fun", "hello", "world", "programming"]
 ```
 
 ---
 
 **Input:**
 ```
-"Java Python C++"
+["java", "python", "c", "javascript"]
 ```
 **Output:**
 ```
-"C++ Python Java"
+["c", "java", "python", "javascript"]
+```
+
+---
+
+## 3. Bubble Sort Implementation
+A problem that teaches the fundamentals of sorting algorithms through hands-on implementation of a classic algorithm.
+
+Implement the **bubble sort algorithm** from scratch to sort an array of integers in ascending order. Bubble sort works by repeatedly stepping through the list, **comparing adjacent elements** and **swapping them** if they are in the wrong order. Continue this process until no more swaps are needed.
+
+This is one of the **simplest sorting algorithms** to understand and implement, making it perfect for learning the **fundamentals of sorting logic** and **algorithm implementation**.
+
+**Your task:** Implement bubble sort algorithm from scratch without using built-in sorting functions.
+
+### Examples
+
+**Input:**
+```
+[5, 2, 8, 1, 9]
+```
+**Output:**
+```
+[1, 2, 5, 8, 9]
+```
+
+---
+
+**Input:**
+```
+[3, 7, 4, 1, 6, 2]
+```
+**Output:**
+```
+[1, 2, 3, 4, 6, 7]
+```
+
+---
+
+**Input:**
+```
+[64, 34, 25, 12, 22, 11, 90]
+```
+**Output:**
+```
+[11, 12, 22, 25, 34, 64, 90]
 ```
