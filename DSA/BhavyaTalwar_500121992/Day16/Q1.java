@@ -3,8 +3,8 @@ class Q1 {
 
     public static void main(String[] args) {
 
-        int[] arr = {15, 25, 35, 45};
-        int num = 25;
+        int[] arr = {10, 20, 30, 40, 50};
+        int num = 30;
         int n = arr.length;
         System.out.println(linear(arr, n, num));
     }
