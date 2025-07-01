@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class FindMax {
+public class Day_16_Question_3 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
