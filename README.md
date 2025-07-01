@@ -1,131 +1,262 @@
-<h2 align="center">Day 15 (30/06/2025)</h2>
+<h2 align="center">Day 16 (01/07/2025)</h2>
 
-## 1. Simple Array Sorting
-A problem that introduces fundamental sorting concepts and demonstrates how to reorganize data efficiently.
 
-You are given an array of integers that are in **random order**. Your task is to write a program that sorts this array in **ascending order** from smallest to largest. You can use any **built-in sorting function** available in your programming language to accomplish this task.
 
-The goal is to understand how to apply **basic sorting operations** to reorganize data efficiently and learn the **fundamental concepts of ordering algorithms**.
+## 1. Linear Search
 
-**Your task:** Sort an integer array in ascending order using built-in sorting functions.
+A problem that introduces fundamental search algorithms and teaches sequential data traversal techniques.
 
-### Examples
 
-**Input:**
-```
-[64, 34, 25, 12, 22, 11, 90]
-```
-**Output:**
-```
-[11, 12, 22, 25, 34, 64, 90]
-```
 
----
+Write a function that searches for a specific **target element** in an array and returns its **index position**. Use the **linear search method**, which means checking each element one by one from the beginning until you find the target or reach the end of the array. If the target element is found, return its index (starting from 0). If the element is not present in the array, **return -1** to indicate that the search was unsuccessful.
 
-**Input:**
-```
-[5, 2, 8, 6, 1, 9, 4]
-```
-**Output:**
-```
-[1, 2, 4, 5, 6, 8, 9]
-```
 
----
 
-**Input:**
-```
-[100, 50, 25, 75]
-```
-**Output:**
-```
-[25, 50, 75, 100]
-```
+This teaches **sequential search algorithms** and **array traversal techniques** that form the foundation of **search operations in computer science**.
 
----
 
-## 2. Sort by String Length
-A problem that demonstrates custom sorting criteria beyond simple numerical or alphabetical ordering.
 
-You have an array of strings with different lengths, and you need to sort them based on their **character count** rather than alphabetical order. Write a program that arranges the strings from **shortest to longest**. If two strings have the same length, **maintain their original relative order**.
+**Your task:** Implement linear search to find target element's index position.
 
-This problem helps you understand **custom sorting criteria** and **stable sorting concepts** used in **data organization and text processing applications**.
 
-**Your task:** Sort strings by length while preserving relative order for equal-length strings.
 
 ### Examples
 
+
+
 **Input:**
+
 ```
-["apple", "pie", "washington", "cat"]
+
+Array: [10, 20, 30, 40, 50], Target: 30
+
 ```
+
 **Output:**
+
 ```
-["pie", "cat", "apple", "washington"]
+
+2
+
 ```
+
+
 
 ---
 
+
+
 **Input:**
+
 ```
-["hello", "world", "a", "programming", "fun"]
+
+Array: [1, 5, 9, 3, 7], Target: 8
+
 ```
+
 **Output:**
+
 ```
-["a", "fun", "hello", "world", "programming"]
+
+-1
+
 ```
+
+
 
 ---
 
+
+
 **Input:**
+
 ```
-["java", "python", "c", "javascript"]
+
+Array: [15, 25, 35, 45], Target: 25
+
 ```
+
 **Output:**
+
 ```
-["c", "java", "python", "javascript"]
+
+1
+
 ```
+
+
 
 ---
 
-## 3. Bubble Sort Implementation
-A problem that teaches the fundamentals of sorting algorithms through hands-on implementation of a classic algorithm.
 
-Implement the **bubble sort algorithm** from scratch to sort an array of integers in ascending order. Bubble sort works by repeatedly stepping through the list, **comparing adjacent elements** and **swapping them** if they are in the wrong order. Continue this process until no more swaps are needed.
 
-This is one of the **simplest sorting algorithms** to understand and implement, making it perfect for learning the **fundamentals of sorting logic** and **algorithm implementation**.
+## 2. Count Occurrences
 
-**Your task:** Implement bubble sort algorithm from scratch without using built-in sorting functions.
+A problem that demonstrates frequency analysis and counting techniques essential for data analysis and statistics.
+
+
+
+Given an array of integers and a **target number**, write a program that counts how many times the target number appears in the array. This is useful for **data analysis** where you need to find the **frequency of specific values**. Your program should traverse through the entire array and maintain a **counter** that increments each time the target value is encountered.
+
+
+
+This teaches **frequency counting algorithms** and **statistical analysis techniques** commonly used in **data processing and pattern recognition**.
+
+
+
+**Your task:** Count the frequency of a target value in an array.
+
+
 
 ### Examples
 
+
+
 **Input:**
+
 ```
-[5, 2, 8, 1, 9]
+
+Array: [1, 2, 3, 2, 2, 4], Target: 2
+
 ```
+
 **Output:**
+
 ```
-[1, 2, 5, 8, 9]
+
+3
+
 ```
+
+
 
 ---
 
+
+
 **Input:**
+
 ```
-[3, 7, 4, 1, 6, 2]
+
+Array: [5, 1, 5, 5, 3, 5, 7], Target: 5
+
 ```
+
 **Output:**
+
 ```
-[1, 2, 3, 4, 6, 7]
+
+4
+
 ```
+
+
 
 ---
 
+
+
 **Input:**
+
 ```
-[64, 34, 25, 12, 22, 11, 90]
+
+Array: [10, 20, 30, 10, 40], Target: 10
+
 ```
+
 **Output:**
+
 ```
-[11, 12, 22, 25, 34, 64, 90]
+
+2
+
 ```
+
+
+
+---
+
+
+
+## 3. Find Maximum Element
+
+A problem that teaches fundamental optimization algorithms and demonstrates how to track extreme values efficiently.
+
+
+
+Create a function that finds and returns the **largest element** in an unsorted array of integers. Your algorithm should examine each element in the array and **keep track of the maximum value** seen so far. This is a fundamental operation in **data processing** and forms the basis for many other algorithms. The function should work efficiently even with **negative numbers** in the array.
+
+
+
+This introduces **optimization algorithms** and **comparison-based searching** techniques that are essential in **algorithm design and data analysis**.
+
+
+
+**Your task:** Find the maximum element in an array using single-pass traversal.
+
+
+
+### Examples
+
+
+
+**Input:**
+
+```
+
+[3, 7, 1, 9, 4, 6]
+
+```
+
+**Output:**
+
+```
+
+9
+
+```
+
+
+
+---
+
+
+
+**Input:**
+
+```
+
+[-5, -2, -8, -1, -3]
+
+```
+
+**Output:**
+
+```
+
+-1
+
+```
+
+
+
+---
+
+
+
+**Input:**
+
+```
+
+[100, 250, 75, 300, 150]
+
+```
+
+**Output:**
+
+```
+
+300
+
+```
+
