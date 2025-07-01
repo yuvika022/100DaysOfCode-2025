@@ -1,6 +1,6 @@
 import java.util.*;
  
-public class CountOccurrences {
+public class Day_16_Question_2 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
