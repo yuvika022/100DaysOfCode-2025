@@ -1,262 +1,131 @@
-<h2 align="center">Day 16 (01/07/2025)</h2>
+<h2 align="center">Day 17 (02/07/2025)</h2>
 
+## 1. Binary Search Implementation
+A problem that introduces efficient searching algorithms and demonstrates the divide-and-conquer approach.
 
+Implement the **binary search algorithm** to find a target element in a **sorted array**. Binary search is much more efficient than linear search for sorted data because it **eliminates half of the remaining elements** in each step. Start by checking the **middle element**, then decide whether to search in the left or right half based on whether the target is smaller or larger than the middle element. Return the **index of the target element** if found, or **-1** if not present.
 
-## 1. Linear Search
+This teaches **divide-and-conquer algorithms** and **logarithmic time complexity** concepts that are fundamental in **efficient algorithm design**.
 
-A problem that introduces fundamental search algorithms and teaches sequential data traversal techniques.
-
-
-
-Write a function that searches for a specific **target element** in an array and returns its **index position**. Use the **linear search method**, which means checking each element one by one from the beginning until you find the target or reach the end of the array. If the target element is found, return its index (starting from 0). If the element is not present in the array, **return -1** to indicate that the search was unsuccessful.
-
-
-
-This teaches **sequential search algorithms** and **array traversal techniques** that form the foundation of **search operations in computer science**.
-
-
-
-**Your task:** Implement linear search to find target element's index position.
-
-
+**Your task:** Implement binary search for finding elements in sorted arrays.
 
 ### Examples
 
-
-
 **Input:**
-
 ```
-
-Array: [10, 20, 30, 40, 50], Target: 30
-
+Array: [1, 3, 5, 7, 9, 11], Target: 7
 ```
-
 **Output:**
-
 ```
-
-2
-
-```
-
-
-
----
-
-
-
-**Input:**
-
-```
-
-Array: [1, 5, 9, 3, 7], Target: 8
-
-```
-
-**Output:**
-
-```
-
--1
-
-```
-
-
-
----
-
-
-
-**Input:**
-
-```
-
-Array: [15, 25, 35, 45], Target: 25
-
-```
-
-**Output:**
-
-```
-
-1
-
-```
-
-
-
----
-
-
-
-## 2. Count Occurrences
-
-A problem that demonstrates frequency analysis and counting techniques essential for data analysis and statistics.
-
-
-
-Given an array of integers and a **target number**, write a program that counts how many times the target number appears in the array. This is useful for **data analysis** where you need to find the **frequency of specific values**. Your program should traverse through the entire array and maintain a **counter** that increments each time the target value is encountered.
-
-
-
-This teaches **frequency counting algorithms** and **statistical analysis techniques** commonly used in **data processing and pattern recognition**.
-
-
-
-**Your task:** Count the frequency of a target value in an array.
-
-
-
-### Examples
-
-
-
-**Input:**
-
-```
-
-Array: [1, 2, 3, 2, 2, 4], Target: 2
-
-```
-
-**Output:**
-
-```
-
 3
-
 ```
-
-
 
 ---
 
-
-
 **Input:**
-
 ```
-
-Array: [5, 1, 5, 5, 3, 5, 7], Target: 5
-
+Array: [2, 4, 6, 8, 10, 12, 14], Target: 5
 ```
-
 **Output:**
-
 ```
-
-4
-
+-1
 ```
-
-
 
 ---
 
-
-
 **Input:**
-
 ```
-
-Array: [10, 20, 30, 10, 40], Target: 10
-
+Array: [10, 20, 30, 40, 50], Target: 30
 ```
-
 **Output:**
-
 ```
-
 2
-
 ```
-
-
 
 ---
 
+## 2. First Occurrence
+A problem that demonstrates advanced binary search variations for handling duplicate elements in sorted data.
 
+In a sorted array that may contain **duplicate elements**, find the index of the **first occurrence** of a target element. Unlike regular binary search that can return any occurrence, this version specifically needs to find the **leftmost position** where the target appears. This is useful when you need to find the **starting position of a sequence** of identical elements in sorted data.
 
-## 3. Find Maximum Element
+This teaches **modified binary search techniques** and **boundary detection algorithms** used in **range queries and data analysis**.
 
-A problem that teaches fundamental optimization algorithms and demonstrates how to track extreme values efficiently.
-
-
-
-Create a function that finds and returns the **largest element** in an unsorted array of integers. Your algorithm should examine each element in the array and **keep track of the maximum value** seen so far. This is a fundamental operation in **data processing** and forms the basis for many other algorithms. The function should work efficiently even with **negative numbers** in the array.
-
-
-
-This introduces **optimization algorithms** and **comparison-based searching** techniques that are essential in **algorithm design and data analysis**.
-
-
-
-**Your task:** Find the maximum element in an array using single-pass traversal.
-
-
+**Your task:** Find the first occurrence of a target element in sorted array with duplicates.
 
 ### Examples
 
-
-
 **Input:**
-
 ```
-
-[3, 7, 1, 9, 4, 6]
-
+Array: [1, 2, 2, 2, 3, 4], Target: 2
 ```
-
 **Output:**
-
 ```
-
-9
-
+1
 ```
-
-
 
 ---
 
-
-
 **Input:**
-
 ```
-
-[-5, -2, -8, -1, -3]
-
+Array: [5, 7, 7, 8, 8, 8, 10], Target: 8
 ```
-
 **Output:**
-
 ```
-
--1
-
+3
 ```
-
-
 
 ---
 
+**Input:**
+```
+Array: [1, 1, 1, 2, 3, 3], Target: 1
+```
+**Output:**
+```
+0
+```
 
+---
+
+## 3. Square Root Using Binary Search
+A problem that demonstrates how binary search can be applied to mathematical problems beyond array searching.
+
+Find the **integer square root** of a given positive number using **binary search technique**. The integer square root is the **largest integer whose square** is less than or equal to the given number. Instead of checking every number from 1 to n, use binary search to **efficiently narrow down the search space**.
+
+This demonstrates how **binary search can be applied to mathematical problems** and teaches **search space optimization** techniques used in **numerical algorithms and computational mathematics**.
+
+**Your task:** Calculate integer square root using binary search on the solution space.
+
+### Examples
 
 **Input:**
-
 ```
-
-[100, 250, 75, 300, 150]
-
+16
 ```
-
 **Output:**
-
+```
+4
 ```
 
-300
+---
 
+**Input:**
+```
+27
+```
+**Output:**
+```
+5
 ```
 
+---
+
+**Input:**
+```
+49
+```
+**Output:**
+```
+7
+```
