@@ -3,10 +3,10 @@ public class Q2 {
         int nums[]={1, 2, 3, 2, 2, 4};
         System.out.println(countOcc(nums, 2));
     }
-    public static int countOcc(int nums[],int val){
+    public static int countOcc(int nums[],int value){
         int count = 0;
         for(int i =0 ; i < nums.length ; i++){
-            if(nums[i] == val){
+            if(nums[i] == value){
                 count++;
             }
         }
