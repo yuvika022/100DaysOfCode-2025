@@ -2,8 +2,8 @@
 class Q2 {
 
     public static void main(String[] args) {
-        int[] arr = {1, 1, 1, 2, 3, 3};
-        int num = 1;
+        int[] arr = {5, 7, 7, 8, 8, 8, 10};
+        int num = 8;
 
         System.out.println(first(arr, num));
     }
