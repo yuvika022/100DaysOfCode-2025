@@ -10,7 +10,6 @@ class Q3 {
         System.out.println(Sqrt(n));
     }
 
-    // Function to compute integer square root using binary search
     public static int Sqrt(int n) {
         if (n == 0 || n == 1) {
             return n;
