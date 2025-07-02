@@ -5,4 +5,4 @@ def count_occur(arr,target):
             count += 1
     return count
 
-print(count_occur(arr=list(map(int,input("enter elements space-seperated: ").split())),target=int(input("enter target: "))))
+print(count_occur(arr=list(map(int,input("enter elements space-seperated: ").replace(',', ' ').split())),target=int(input("enter target: "))))
