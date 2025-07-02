@@ -1,20 +1,18 @@
 def first_occurrence_user_defined():
-    # Taking input for the sorted array with duplicates
     arr = list(map(int, input("Enter the sorted array elements (space-separated): ").split()))
-    
-    # Taking input for the target element
+
     target = int(input("Enter the target element to find first occurrence of: "))
     
     left = 0
     right = len(arr) - 1
-    result = -1  # Default if not found
+    result = -1 
 
     while left <= right:
         mid = (left + right) // 2
 
         if arr[mid] == target:
-            result = mid      # Potential answer
-            right = mid - 1   # Keep checking in left half
+            result = mid    
+            right = mid - 1 
         elif arr[mid] < target:
             left = mid + 1
         else:
