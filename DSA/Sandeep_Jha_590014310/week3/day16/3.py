@@ -5,4 +5,4 @@ def find_max(arr):
             max = n
     return max
 
-print(find_max(arr=list(map(int,input("enter elements space-seperated: ").split()))))
+print(find_max(arr=list(map(int,input("enter elements space-seperated: ").replace(',', ' ').split()))))
