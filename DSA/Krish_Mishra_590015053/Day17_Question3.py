@@ -1,5 +1,4 @@
 def integer_square_root():
-    # Taking input for the number
     num = int(input("Enter a positive number: "))
 
     if num < 0:
@@ -22,9 +21,8 @@ def integer_square_root():
             print(f"Square root is: {mid}")
             return
         elif square < num:
-            result = mid      # Store the floor of sqrt
+            result = mid 
             left = mid + 1
         else:
             right = mid - 1
-
     print(f"Square root is: {result}")
