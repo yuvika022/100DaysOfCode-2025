@@ -1,13 +1,17 @@
 
-public class IntegerSquareRoot {
+import java.util.*;
+
+class Q3 {
 
     public static void main(String[] args) {
-        int n = 26;
-        System.out.println("Integer square root of " + n + " is: " + integerSqrt(n));
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter a number: ");
+        int n = sc.nextInt();
+        System.out.println(Sqrt(n));
     }
 
     // Function to compute integer square root using binary search
-    public static int integerSqrt(int n) {
+    public static int Sqrt(int n) {
         if (n == 0 || n == 1) {
             return n;
         }
@@ -18,16 +22,15 @@ public class IntegerSquareRoot {
         while (left <= right) {
             int mid = left + (right - left) / 2;
 
-            // To avoid overflow, use long for multiplication
             long square = (long) mid * mid;
 
             if (square == n) {
-                return mid; // Perfect square
+                return mid;
             } else if (square < n) {
-                ans = mid;       // Mid is a potential answer
-                left = mid + 1;  // Try to find a bigger one
+                ans = mid;
+                left = mid + 1;
             } else {
-                right = mid - 1; // Square too big
+                right = mid - 1;
             }
         }
 
