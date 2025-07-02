@@ -13,7 +13,7 @@ def is_digits_only(s):
             return False
     return True
 
-print(is_digits_only("-123"))
+print(is_digits_only(s=(input("enter your string: "))))
 
 # For input "", this returns True, but for input "123", it works correctly. What's the logical error?
 # ANS -> Line 1 was returning true when the length was 0 which is incorrect as it not numeric, therfore changed it to False and now it is working properly
@@ -22,7 +22,10 @@ print(is_digits_only("-123"))
 #Ans -> changed the return statement to False in Line 1
 
 # B) The loop condition should use indices instead of characters
+#Ans -> using length for indices
 
 # C) The character comparison should use ASCII values
+#Ans -> using ord for ascii
 
 # D) The function should handle negative numbers
+#Ans -> properly handling negative numbers
