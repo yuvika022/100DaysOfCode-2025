@@ -22,7 +22,6 @@ def first_non_repeating(s):
 # 2. Explain why the current approach gives incorrect results
 '''Ans -> The function should return the index of the first character in the string that appears only once.
 By looping over char_count, you may not check characters in the order they appear in the string.
-if the string is "aabbcc", all counts are 2, so it returns -1, which is correct.
 The main issue is that the function should check the string in its original order, not the order of unique characters. '''
 # 3. Provide the corrected implementation
 
