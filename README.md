@@ -1,131 +1,131 @@
-<h2 align="center">Day 17 (02/07/2025)</h2>
+<h2 align="center">Day 18 (03/07/2025)</h2>
 
-## 1. Binary Search Implementation
-A problem that introduces efficient searching algorithms and demonstrates the divide-and-conquer approach.
+## 1. Selection Sort
+A problem that introduces fundamental sorting algorithms and teaches how to organize data systematically through comparison-based techniques.
 
-Implement the **binary search algorithm** to find a target element in a **sorted array**. Binary search is much more efficient than linear search for sorted data because it **eliminates half of the remaining elements** in each step. Start by checking the **middle element**, then decide whether to search in the left or right half based on whether the target is smaller or larger than the middle element. Return the **index of the target element** if found, or **-1** if not present.
+Implement the **selection sort algorithm** to sort an array of integers in ascending order. Selection sort works by finding the **minimum element** from the unsorted portion of the array and **swapping it** with the first element of the unsorted portion. This process is repeated until the entire array is sorted. While not the most efficient for large datasets, selection sort is simple to understand and implement, making it great for learning **sorting concepts** and **algorithm fundamentals**.
 
-This teaches **divide-and-conquer algorithms** and **logarithmic time complexity** concepts that are fundamental in **efficient algorithm design**.
+This teaches **comparison-based sorting** and **in-place array manipulation** techniques that form the foundation of **algorithmic thinking and data organization**.
 
-**Your task:** Implement binary search for finding elements in sorted arrays.
-
-### Examples
-
-**Input:**
-```
-Array: [1, 3, 5, 7, 9, 11], Target: 7
-```
-**Output:**
-```
-3
-```
-
----
-
-**Input:**
-```
-Array: [2, 4, 6, 8, 10, 12, 14], Target: 5
-```
-**Output:**
-```
--1
-```
-
----
-
-**Input:**
-```
-Array: [10, 20, 30, 40, 50], Target: 30
-```
-**Output:**
-```
-2
-```
-
----
-
-## 2. First Occurrence
-A problem that demonstrates advanced binary search variations for handling duplicate elements in sorted data.
-
-In a sorted array that may contain **duplicate elements**, find the index of the **first occurrence** of a target element. Unlike regular binary search that can return any occurrence, this version specifically needs to find the **leftmost position** where the target appears. This is useful when you need to find the **starting position of a sequence** of identical elements in sorted data.
-
-This teaches **modified binary search techniques** and **boundary detection algorithms** used in **range queries and data analysis**.
-
-**Your task:** Find the first occurrence of a target element in sorted array with duplicates.
+**Your task:** Implement selection sort to arrange elements in ascending order.
 
 ### Examples
 
 **Input:**
 ```
-Array: [1, 2, 2, 2, 3, 4], Target: 2
+[29, 10, 14, 37, 13]
 ```
 **Output:**
 ```
-1
+[10, 13, 14, 29, 37]
 ```
 
 ---
 
 **Input:**
 ```
-Array: [5, 7, 7, 8, 8, 8, 10], Target: 8
+[64, 25, 12, 22, 11]
 ```
 **Output:**
 ```
-3
+[11, 12, 22, 25, 64]
 ```
 
 ---
 
 **Input:**
 ```
-Array: [1, 1, 1, 2, 3, 3], Target: 1
+[5, 3, 8, 1, 6]
 ```
 **Output:**
 ```
-0
+[1, 3, 5, 6, 8]
 ```
 
 ---
 
-## 3. Square Root Using Binary Search
-A problem that demonstrates how binary search can be applied to mathematical problems beyond array searching.
+## 2. Insertion Sort
+A problem that demonstrates adaptive sorting techniques and teaches efficient handling of nearly sorted data through incremental insertion methods.
 
-Find the **integer square root** of a given positive number using **binary search technique**. The integer square root is the **largest integer whose square** is less than or equal to the given number. Instead of checking every number from 1 to n, use binary search to **efficiently narrow down the search space**.
+Write a program that implements **insertion sort** to arrange an array of integers in ascending order. Insertion sort builds the final sorted array **one element at a time** by taking elements from the unsorted portion and **inserting them** into their correct position in the sorted portion. It's similar to how you might sort playing cards in your hand, making it **intuitive to understand** and efficient for small arrays or nearly sorted data.
 
-This demonstrates how **binary search can be applied to mathematical problems** and teaches **search space optimization** techniques used in **numerical algorithms and computational mathematics**.
+This introduces **adaptive sorting algorithms** and **incremental data processing** techniques essential for **efficient data manipulation and real-time sorting scenarios**.
 
-**Your task:** Calculate integer square root using binary search on the solution space.
+**Your task:** Implement insertion sort using the card-sorting approach.
 
 ### Examples
 
 **Input:**
 ```
-16
+[12, 11, 13, 5, 6]
 ```
 **Output:**
 ```
-4
+[5, 6, 11, 12, 13]
 ```
 
 ---
 
 **Input:**
 ```
-27
+[31, 41, 59, 26, 53]
 ```
 **Output:**
 ```
-5
+[26, 31, 41, 53, 59]
 ```
 
 ---
 
 **Input:**
 ```
-49
+[4, 2, 7, 1, 3]
 ```
 **Output:**
 ```
-7
+[1, 2, 3, 4, 7]
+```
+
+---
+
+## 3. Sort Colors (Dutch Flag)
+A problem that teaches advanced array partitioning techniques and demonstrates efficient three-way sorting using the famous Dutch National Flag algorithm.
+
+You are given an array containing only **three distinct values**: 0, 1, and 2, representing three different colors. Sort this array **in-place** so that all 0s come first, followed by all 1s, and then all 2s. The challenge is to do this efficiently in a **single pass** through the array without using extra space for another array. This problem is also known as the **Dutch National Flag problem** and demonstrates optimal **three-way partitioning**.
+
+This teaches **partitioning algorithms** and **space-efficient sorting** techniques that are crucial for **memory-constrained environments and optimal algorithm design**.
+
+**Your task:** Sort three colors efficiently using single-pass three-way partitioning.
+
+### Examples
+
+**Input:**
+```
+[2, 0, 2, 1, 1, 0]
+```
+**Output:**
+```
+[0, 0, 1, 1, 2, 2]
+```
+
+---
+
+**Input:**
+```
+[2, 0, 1, 2, 1, 0, 0]
+```
+**Output:**
+```
+[0, 0, 0, 1, 1, 2, 2]
+```
+
+---
+
+**Input:**
+```
+[1, 2, 0, 1, 2, 0]
+```
+**Output:**
+```
+[0, 0, 1, 1, 2, 2]
 ```
