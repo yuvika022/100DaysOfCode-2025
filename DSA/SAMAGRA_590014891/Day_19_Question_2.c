@@ -3,7 +3,8 @@
 int findPeakElement(int arr[], int n) {
     int low = 0, high = n - 1;
 
-    while (low <= high) {
+    while (low <= high) 
+    {
         int mid = low + (high - low) / 2;
 
         int left = (mid == 0) || (arr[mid] >= arr[mid - 1]);
