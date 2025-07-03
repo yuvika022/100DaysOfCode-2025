@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class SelectionSort {
+public class Day_18_Question_1 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
