@@ -1,7 +1,7 @@
 import java.util.Arrays;
 public class Q3 {
     public static void main(String[] args) {
-        int[] arr = {2, 0, 2, 1, 1, 0};  // Example array
+        int[] arr = {2, 0, 2, 1, 1, 0};
         sortColors(arr);
         System.out.println("Sorted Colors Array: " + Arrays.toString(arr));
     }
