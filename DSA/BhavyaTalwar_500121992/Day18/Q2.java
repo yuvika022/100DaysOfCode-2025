@@ -2,7 +2,7 @@
 class Q2 {
 
     public static void main(String[] args) {
-        int[] arr = {25, 12, 9, 30, 2};
+        int[] arr = {4, 2, 7, 1, 3};
 
         insertionSort(arr);
         printArray(arr);
