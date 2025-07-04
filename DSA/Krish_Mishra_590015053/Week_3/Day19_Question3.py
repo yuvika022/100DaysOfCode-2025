@@ -4,8 +4,6 @@ def search_matrix(matrix, target):
 
     rows = len(matrix)
     cols = len(matrix[0])
-
-    # Start from top-right corner
     row = 0
     col = cols - 1
 
@@ -15,8 +13,8 @@ def search_matrix(matrix, target):
         if current == target:
             return True
         elif current > target:
-            col -= 1  # Move left
+            col -= 1 
         else:
-            row += 1  # Move down
+            row += 1 
 
     return False
