@@ -1,6 +1,6 @@
-import java.util.Scanner;
+import java.util.*;
 
-public class PeakElementFinder {
+public class Day_19_Question_2 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
