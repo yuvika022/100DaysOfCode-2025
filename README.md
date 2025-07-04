@@ -1,131 +1,131 @@
-<h2 align="center">Day 10 (25/06/2025)</h2>
+<h2 align="center">Day 17 (02/07/2025)</h2>
 
-## 1. String Comparison
-A problem that teaches comprehensive string comparison operations and lexicographical ordering.
+## 1. Binary Search Implementation
+A problem that introduces efficient searching algorithms and demonstrates the divide-and-conquer approach.
 
-Write a program that compares two strings and determines their relationship. Check if the strings are **exactly equal**, **equal when ignoring case**, or **completely different**. Also determine which string comes first **alphabetically** (lexicographically).
+Implement the **binary search algorithm** to find a target element in a **sorted array**. Binary search is much more efficient than linear search for sorted data because it **eliminates half of the remaining elements** in each step. Start by checking the **middle element**, then decide whether to search in the left or right half based on whether the target is smaller or larger than the middle element. Return the **index of the target element** if found, or **-1** if not present.
 
-This helps understand **string comparison operations** which are fundamental in **sorting and searching algorithms**.
+This teaches **divide-and-conquer algorithms** and **logarithmic time complexity** concepts that are fundamental in **efficient algorithm design**.
 
-**Your task:** Compare two strings for exact equality, case-insensitive equality, and lexicographical order.
-
-### Examples
-
-**Input:**
-```
-String1: "Hello", String2: "hello"
-```
-**Output:**
-```
-Not equal, Equal ignoring case, "Hello" comes before "hello"
-```
-
----
-
-**Input:**
-```
-String1: "apple", String2: "banana"
-```
-**Output:**
-```
-Not equal, Not equal ignoring case, "apple" comes before "banana"
-```
-
----
-
-**Input:**
-```
-String1: "test", String2: "test"
-```
-**Output:**
-```
-Equal, Equal ignoring case, Strings are identical
-```
-
----
-
-## 2. Remove Spaces
-A problem that demonstrates different types of string cleaning operations used in data processing.
-
-Create a function that **removes all spaces** from a given string and returns the result. Additionally, provide a version that removes only **leading and trailing spaces** (trim), and another that removes **extra spaces between words** (leaving only single spaces).
-
-This demonstrates different types of **string cleaning operations** commonly used in **data processing**.
-
-**Your task:** Implement three space removal operations: all spaces, trim, and single spaces.
+**Your task:** Implement binary search for finding elements in sorted arrays.
 
 ### Examples
 
 **Input:**
 ```
-" hello world "
+Array: [1, 3, 5, 7, 9, 11], Target: 7
 ```
 **Output:**
 ```
-Remove all: "helloworld", Trim: "hello world", Single spaces: "hello world"
+3
 ```
 
 ---
 
 **Input:**
 ```
-"programming is fun"
+Array: [2, 4, 6, 8, 10, 12, 14], Target: 5
 ```
 **Output:**
 ```
-Remove all: "programmingisfun", Trim: "programming is fun", Single spaces: "programming is fun"
+-1
 ```
 
 ---
 
 **Input:**
 ```
-" a b c "
+Array: [10, 20, 30, 40, 50], Target: 30
 ```
 **Output:**
 ```
-Remove all: "abc", Trim: "a b c", Single spaces: "a b c"
+2
 ```
 
 ---
 
-## 3. Check Anagram
-A problem that teaches character frequency analysis and comparison techniques for anagram detection.
+## 2. First Occurrence
+A problem that demonstrates advanced binary search variations for handling duplicate elements in sorted data.
 
-Two strings are **anagrams** if they contain the same characters with the same frequency, but possibly in different order. Write a program to check if two given strings are anagrams of each other. **Ignore case and spaces** for this comparison.
+In a sorted array that may contain **duplicate elements**, find the index of the **first occurrence** of a target element. Unlike regular binary search that can return any occurrence, this version specifically needs to find the **leftmost position** where the target appears. This is useful when you need to find the **starting position of a sequence** of identical elements in sorted data.
 
-This problem helps understand **character frequency analysis** and **comparison techniques**.
+This teaches **modified binary search techniques** and **boundary detection algorithms** used in **range queries and data analysis**.
 
-**Your task:** Check if two strings are anagrams (ignore case and spaces).
+**Your task:** Find the first occurrence of a target element in sorted array with duplicates.
 
 ### Examples
 
 **Input:**
 ```
-String1: "listen", String2: "silent"
+Array: [1, 2, 2, 2, 3, 4], Target: 2
 ```
 **Output:**
 ```
-true
+1
 ```
 
 ---
 
 **Input:**
 ```
-String1: "hello", String2: "world"
+Array: [5, 7, 7, 8, 8, 8, 10], Target: 8
 ```
 **Output:**
 ```
-false
+3
 ```
 
 ---
 
 **Input:**
 ```
-String1: "The Eyes", String2: "They See"
+Array: [1, 1, 1, 2, 3, 3], Target: 1
 ```
 **Output:**
 ```
-true
+0
+```
+
+---
+
+## 3. Square Root Using Binary Search
+A problem that demonstrates how binary search can be applied to mathematical problems beyond array searching.
+
+Find the **integer square root** of a given positive number using **binary search technique**. The integer square root is the **largest integer whose square** is less than or equal to the given number. Instead of checking every number from 1 to n, use binary search to **efficiently narrow down the search space**.
+
+This demonstrates how **binary search can be applied to mathematical problems** and teaches **search space optimization** techniques used in **numerical algorithms and computational mathematics**.
+
+**Your task:** Calculate integer square root using binary search on the solution space.
+
+### Examples
+
+**Input:**
+```
+16
+```
+**Output:**
+```
+4
+```
+
+---
+
+**Input:**
+```
+27
+```
+**Output:**
+```
+5
+```
+
+---
+
+**Input:**
+```
+49
+```
+**Output:**
+```
+7
 ```
