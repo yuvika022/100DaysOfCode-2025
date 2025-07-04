@@ -1,131 +1,131 @@
-<h2 align="center">Day 18 (03/07/2025)</h2>
+<h2 align="center">Day 19 (04/07/2025)</h2>
 
-## 1. Selection Sort
-A problem that introduces fundamental sorting algorithms and teaches how to organize data systematically through comparison-based techniques.
+## 1. Search in Rotated Array
+A problem that introduces advanced search techniques and teaches how to maintain binary search efficiency in modified sorted structures.
 
-Implement the **selection sort algorithm** to sort an array of integers in ascending order. Selection sort works by finding the **minimum element** from the unsorted portion of the array and **swapping it** with the first element of the unsorted portion. This process is repeated until the entire array is sorted. While not the most efficient for large datasets, selection sort is simple to understand and implement, making it great for learning **sorting concepts** and **algorithm fundamentals**.
+You have a **sorted array** that has been rotated at some unknown pivot point. For example, the array [0,1,2,4,5,6,7] might become [4,5,6,7,0,1,2] after rotation. Write a function to search for a **target value** in this rotated sorted array and return its **index**. If the target is not found, return **-1**. The challenge is to maintain the **efficiency of binary search** even though the array is no longer fully sorted in the traditional sense.
 
-This teaches **comparison-based sorting** and **in-place array manipulation** techniques that form the foundation of **algorithmic thinking and data organization**.
+This teaches **modified binary search algorithms** and **pivot-based searching** techniques that are essential for **handling rotated data structures and optimizing search operations**.
 
-**Your task:** Implement selection sort to arrange elements in ascending order.
-
-### Examples
-
-**Input:**
-```
-[29, 10, 14, 37, 13]
-```
-**Output:**
-```
-[10, 13, 14, 29, 37]
-```
-
----
-
-**Input:**
-```
-[64, 25, 12, 22, 11]
-```
-**Output:**
-```
-[11, 12, 22, 25, 64]
-```
-
----
-
-**Input:**
-```
-[5, 3, 8, 1, 6]
-```
-**Output:**
-```
-[1, 3, 5, 6, 8]
-```
-
----
-
-## 2. Insertion Sort
-A problem that demonstrates adaptive sorting techniques and teaches efficient handling of nearly sorted data through incremental insertion methods.
-
-Write a program that implements **insertion sort** to arrange an array of integers in ascending order. Insertion sort builds the final sorted array **one element at a time** by taking elements from the unsorted portion and **inserting them** into their correct position in the sorted portion. It's similar to how you might sort playing cards in your hand, making it **intuitive to understand** and efficient for small arrays or nearly sorted data.
-
-This introduces **adaptive sorting algorithms** and **incremental data processing** techniques essential for **efficient data manipulation and real-time sorting scenarios**.
-
-**Your task:** Implement insertion sort using the card-sorting approach.
+**Your task:** Implement efficient search in rotated sorted arrays using binary search principles.
 
 ### Examples
 
 **Input:**
 ```
-[12, 11, 13, 5, 6]
+Array: [4, 5, 6, 7, 0, 1, 2], Target: 0
 ```
 **Output:**
 ```
-[5, 6, 11, 12, 13]
+4
 ```
 
 ---
 
 **Input:**
 ```
-[31, 41, 59, 26, 53]
+Array: [4, 5, 6, 7, 0, 1, 2], Target: 3
 ```
 **Output:**
 ```
-[26, 31, 41, 53, 59]
+-1
 ```
 
 ---
 
 **Input:**
 ```
-[4, 2, 7, 1, 3]
+Array: [11, 13, 15, 17, 19, 2, 3, 6, 7], Target: 6
 ```
 **Output:**
 ```
-[1, 2, 3, 4, 7]
+7
 ```
 
 ---
 
-## 3. Sort Colors (Dutch Flag)
-A problem that teaches advanced array partitioning techniques and demonstrates efficient three-way sorting using the famous Dutch National Flag algorithm.
+## 2. Peak Element
+A problem that demonstrates divide-and-conquer optimization techniques and teaches efficient local maximum finding without exhaustive searching.
 
-You are given an array containing only **three distinct values**: 0, 1, and 2, representing three different colors. Sort this array **in-place** so that all 0s come first, followed by all 1s, and then all 2s. The challenge is to do this efficiently in a **single pass** through the array without using extra space for another array. This problem is also known as the **Dutch National Flag problem** and demonstrates optimal **three-way partitioning**.
+A **peak element** in an array is an element that is **greater than both of its neighbors**. For elements at the edges of the array, they only need to be greater than their single neighbor. Find the **index** of any peak element in the given array. The array may contain **multiple peaks**, so returning the index of any one of them is acceptable. Try to solve this more efficiently than checking every element using **binary search approach**.
 
-This teaches **partitioning algorithms** and **space-efficient sorting** techniques that are crucial for **memory-constrained environments and optimal algorithm design**.
+This introduces **local optimization algorithms** and **divide-and-conquer search** techniques crucial for **finding extrema efficiently and peak detection in data analysis**.
 
-**Your task:** Sort three colors efficiently using single-pass three-way partitioning.
+**Your task:** Find any peak element's index using efficient divide-and-conquer approach.
 
 ### Examples
 
 **Input:**
 ```
-[2, 0, 2, 1, 1, 0]
+[1, 3, 20, 4, 1, 0]
 ```
 **Output:**
 ```
-[0, 0, 1, 1, 2, 2]
+2
 ```
 
 ---
 
 **Input:**
 ```
-[2, 0, 1, 2, 1, 0, 0]
+[1, 2, 1, 3, 5, 6, 4]
 ```
 **Output:**
 ```
-[0, 0, 0, 1, 1, 2, 2]
+5
 ```
 
 ---
 
 **Input:**
 ```
-[1, 2, 0, 1, 2, 0]
+[10, 20, 15, 2, 23, 90, 67]
 ```
 **Output:**
 ```
-[0, 0, 1, 1, 2, 2]
+1
+```
+
+---
+
+## 3. Search 2D Matrix
+A problem that teaches multi-dimensional search optimization and demonstrates strategic positioning techniques for efficient matrix traversal.
+
+You are given a **2D matrix** where each row is sorted in ascending order and each column is also sorted in ascending order. Write an efficient algorithm to search for a **target value** in this matrix. Return **true** if the target is found, **false** otherwise. The key insight is to start from a **strategic position** that allows you to eliminate either a complete row or column with each comparison, achieving optimal time complexity.
+
+This teaches **2D search algorithms** and **matrix traversal optimization** techniques essential for **multi-dimensional data processing and spatial search operations**.
+
+**Your task:** Search efficiently in sorted 2D matrix using strategic positioning approach.
+
+### Examples
+
+**Input:**
+```
+Matrix: [[1,4,7],[2,5,8],[3,6,9]], Target: 5
+```
+**Output:**
+```
+true
+```
+
+---
+
+**Input:**
+```
+Matrix: [[1,4,7],[2,5,8],[3,6,9]], Target: 13
+```
+**Output:**
+```
+false
+```
+
+---
+
+**Input:**
+```
+Matrix: [[1,3,5],[2,4,6],[7,8,9]], Target: 6
+```
+**Output:**
+```
+true
 ```
