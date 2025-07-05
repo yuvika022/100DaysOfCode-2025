@@ -1,6 +1,4 @@
 import java.util.*;
-
-// Step 1: Define a Student class
 class Student {
     String name;
     int grade;
