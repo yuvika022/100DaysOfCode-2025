@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class MergeSortedArrays {
+public class Day_20_Question_2 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
