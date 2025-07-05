@@ -1,16 +1,14 @@
-def sortColors(arr):
-    low, mid, high = 0, 0, len(arr) - 1
-
-    while mid <= high:
-        if arr[mid] == 0:
-            arr[low], arr[mid] = arr[mid], arr[low]
-            low += 1
-            mid += 1
-        elif arr[mid] == 1:
-            mid += 1
+def sqrroot(n):
+    left = 0
+    right = n
+    for i in range(n):
+        mid = (left + right) // 2
+        if mid * mid == n:
+            return mid
+        elif mid * mid < n:
+            left = mid + 1
         else:
-            arr[mid], arr[high] = arr[high], arr[mid]
-            high -= 1
-    return arr
+            right = mid - 1
+    return "not a perfect square"
 
-print(sortColors(list(map(int,input("enter the elements space-separated: ").replace(",", "").split()))))
+print(sqrroot(int(input("Enter the number: "))))

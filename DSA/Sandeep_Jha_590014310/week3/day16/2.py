@@ -1,8 +1,5 @@
-def count_occur(arr,target):
-    count = 0
-    for e in arr:
-        if e == target:
-            count += 1
-    return count
+def sort_str(strArr):
+    return sorted(strArr, key=len)
 
-print(count_occur(arr=list(map(int,input("enter elements space-seperated: ").replace(',', ' ').split())),target=int(input("enter target: "))))
+arr = list(map(int, input("Enter your array (space-separated): ").split()))
+print(sort_str(arr))
