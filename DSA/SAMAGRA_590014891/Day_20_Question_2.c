@@ -3,7 +3,6 @@
 void mergeSortedArrays(int a[], int n, int b[], int m, int result[]) {
     int i = 0, j = 0, k = 0;
 
-    // Merge elements until one array is fully traversed
     while (i < n && j < m) {
         if (a[i] < b[j]) {
             result[k++] = a[i++];
@@ -12,12 +11,10 @@ void mergeSortedArrays(int a[], int n, int b[], int m, int result[]) {
         }
     }
 
-    // Copy remaining elements of a[]
     while (i < n) {
         result[k++] = a[i++];
     }
 
-    // Copy remaining elements of b[]
     while (j < m) {
         result[k++] = b[j++];
     }
