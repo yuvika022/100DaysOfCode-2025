@@ -16,7 +16,6 @@ def merge_sorted_arrays(arr1, arr2):
         j += 1
     return merged
 
-# Take user input
 arr1 = list(map(int, input("Enter first sorted array (space-separated): ").split()))
 arr2 = list(map(int, input("Enter second sorted array (space-separated): ").split()))
 
