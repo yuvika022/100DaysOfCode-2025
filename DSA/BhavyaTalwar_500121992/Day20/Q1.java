@@ -12,7 +12,7 @@ class Student {
     }
 }
 
-public class Q1 {
+class Q1 {
 
     public static void main(String[] args) {
         List<Student> students = new ArrayList<>();
