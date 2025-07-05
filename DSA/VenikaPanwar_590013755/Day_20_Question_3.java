@@ -1,4 +1,4 @@
-import java.util.Scanner;
+import java.util.*;
 
 public class KthLargestElement {
     public static void main(String[] args) {
