@@ -9,8 +9,6 @@ def find_kth_largest(arr, k):
             heapq.heappushpop(min_heap, num)
 
     return min_heap[0]
-
-# User input
 arr = list(map(int, input("Enter the array elements (space-separated): ").split()))
 k = int(input("Enter the value of K: "))
 
