@@ -1,131 +1,120 @@
-<h2 align="center">Day 15 (30/06/2025)</h2>
+<h2 align="center">Day 20 (05/07/2025)</h2>
 
-## 1. Simple Array Sorting
-A problem that introduces fundamental sorting concepts and demonstrates how to reorganize data efficiently.
+## 1. Sort Students by Grade
+A problem that introduces custom sorting techniques and teaches how to sort complex data structures based on specific criteria.
 
-You are given an array of integers that are in **random order**. Your task is to write a program that sorts this array in **ascending order** from smallest to largest. You can use any **built-in sorting function** available in your programming language to accomplish this task.
+You are given a list of students along with their grades, represented as **pairs (tuples)** containing the student's name and their numerical grade. Write a program to sort these students by their **grades in descending order** (highest grade first). This type of sorting is commonly used in **educational systems** for ranking students or generating **merit lists**. The challenge involves understanding how to sort based on specific attributes of compound data structures.
 
-The goal is to understand how to apply **basic sorting operations** to reorganize data efficiently and learn the **fundamental concepts of ordering algorithms**.
+This teaches **custom comparison sorting** and **tuple/object manipulation** techniques that are essential for **real-world data processing and ranking systems**.
 
-**Your task:** Sort an integer array in ascending order using built-in sorting functions.
-
-### Examples
-
-**Input:**
-```
-[64, 34, 25, 12, 22, 11, 90]
-```
-**Output:**
-```
-[11, 12, 22, 25, 34, 64, 90]
-```
-
----
-
-**Input:**
-```
-[5, 2, 8, 6, 1, 9, 4]
-```
-**Output:**
-```
-[1, 2, 4, 5, 6, 8, 9]
-```
-
----
-
-**Input:**
-```
-[100, 50, 25, 75]
-```
-**Output:**
-```
-[25, 50, 75, 100]
-```
-
----
-
-## 2. Sort by String Length
-A problem that demonstrates custom sorting criteria beyond simple numerical or alphabetical ordering.
-
-You have an array of strings with different lengths, and you need to sort them based on their **character count** rather than alphabetical order. Write a program that arranges the strings from **shortest to longest**. If two strings have the same length, **maintain their original relative order**.
-
-This problem helps you understand **custom sorting criteria** and **stable sorting concepts** used in **data organization and text processing applications**.
-
-**Your task:** Sort strings by length while preserving relative order for equal-length strings.
+**Your task:** Sort student records by grades in descending order using custom sorting criteria.
 
 ### Examples
 
 **Input:**
 ```
-["apple", "pie", "washington", "cat"]
+[("Ram", 85), ("Bhuvi", 92), ("Chetan", 78)]
 ```
 **Output:**
 ```
-["pie", "cat", "apple", "washington"]
+[("Bhuvi", 92), ("Ram", 85), ("Chetan", 78)]
 ```
 
 ---
 
 **Input:**
 ```
-["hello", "world", "a", "programming", "fun"]
+[("Jatin", 88), ("Sarah", 95), ("Mona", 82), ("Aadi", 95)]
 ```
 **Output:**
 ```
-["a", "fun", "hello", "world", "programming"]
+[("Sarah", 95), ("Aadi", 95), ("Jatin", 88), ("Mona", 82)]
 ```
 
 ---
 
-**Input:**
-```
-["java", "python", "c", "javascript"]
-```
-**Output:**
-```
-["c", "java", "python", "javascript"]
-```
+## 2. Merge Two Sorted Arrays
+A problem that demonstrates efficient array merging techniques and teaches the fundamental building block of merge sort algorithm.
 
----
+Given two arrays that are already **sorted in ascending order**, write a function to merge them into a **single sorted array**. The merged array should contain all elements from both input arrays while maintaining the **sorted order**. This operation is fundamental in **merge sort algorithm** and is commonly used in data processing where you need to **combine sorted datasets** efficiently without re-sorting the entire collection.
 
-## 3. Bubble Sort Implementation
-A problem that teaches the fundamentals of sorting algorithms through hands-on implementation of a classic algorithm.
+This introduces **two-pointer merging** and **divide-and-conquer principles** that are crucial for **efficient sorting algorithms and data stream processing**.
 
-Implement the **bubble sort algorithm** from scratch to sort an array of integers in ascending order. Bubble sort works by repeatedly stepping through the list, **comparing adjacent elements** and **swapping them** if they are in the wrong order. Continue this process until no more swaps are needed.
-
-This is one of the **simplest sorting algorithms** to understand and implement, making it perfect for learning the **fundamentals of sorting logic** and **algorithm implementation**.
-
-**Your task:** Implement bubble sort algorithm from scratch without using built-in sorting functions.
+**Your task:** Merge two pre-sorted arrays into one sorted array using optimal merging technique.
 
 ### Examples
 
 **Input:**
 ```
-[5, 2, 8, 1, 9]
+Array1: [1, 3, 5], Array2: [2, 4, 6]
 ```
 **Output:**
 ```
-[1, 2, 5, 8, 9]
+[1, 2, 3, 4, 5, 6]
 ```
 
 ---
 
 **Input:**
 ```
-[3, 7, 4, 1, 6, 2]
+Array1: [1, 5, 9, 10], Array2: [2, 3, 8, 13]
 ```
 **Output:**
 ```
-[1, 2, 3, 4, 6, 7]
+[1, 2, 3, 5, 8, 9, 10, 13]
 ```
 
 ---
 
 **Input:**
 ```
-[64, 34, 25, 12, 22, 11, 90]
+Array1: [10, 30, 50], Array2: [20, 40, 60, 70]
 ```
 **Output:**
 ```
-[11, 12, 22, 25, 34, 64, 90]
+[10, 20, 30, 40, 50, 60, 70]
+```
+
+---
+
+## 3. Kth Largest Element
+A problem that teaches selection algorithms and demonstrates efficient methods for finding ranked elements without full sorting.
+
+Find the **Kth largest element** in an unsorted array of integers. For example, if K=1, find the largest element; if K=2, find the second largest element, and so on. This problem appears frequently in **interviews** and **real-world applications** like finding top performers, identifying outliers, or selecting elements based on rank. You can solve this by sorting first, but try to think of **more efficient approaches** using selection algorithms or heap-based methods.
+
+This teaches **selection algorithms** and **partial sorting techniques** that are essential for **top-K problems and efficient ranking without complete data sorting**.
+
+**Your task:** Find the Kth largest element using efficient selection algorithms beyond simple sorting.
+
+### Examples
+
+**Input:**
+```
+Array: [3, 2, 1, 5, 6, 4], K: 2
+```
+**Output:**
+```
+5
+```
+
+---
+
+**Input:**
+```
+Array: [7, 10, 4, 3, 20, 15], K: 3
+```
+**Output:**
+```
+10
+```
+
+---
+
+**Input:**
+```
+Array: [1, 23, 12, 9, 30, 2, 50], K: 4
+```
+**Output:**
+```
+12
 ```
