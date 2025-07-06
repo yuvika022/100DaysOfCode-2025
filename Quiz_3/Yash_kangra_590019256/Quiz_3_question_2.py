@@ -8,8 +8,7 @@ def sort_colors(nums):
             current += 1
         elif nums[current] == 1:
             current += 1
-        else:  # nums[current] == 2
+        else:
             nums[current], nums[right] = nums[right], nums[current]
             right -= 1
-            # Do NOT increment current here — recheck the swapped value
     return nums
