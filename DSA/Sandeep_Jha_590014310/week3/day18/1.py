@@ -1,18 +1,15 @@
-#python has built in function for sorting
-#sort()
+def bin_sear(arr,target):
+    arr.sort()
+    left = 0
+    right = len(arr) - 1
+    while left <= right:
+        mid = (left + right) // 2
+        if arr[mid] == target:
+            return mid
+        elif arr[mid] < target:
+            left = mid + 1
+        else:
+            right = mid - 1
+    return -1
 
-def selection_sort(arr):
-    n = len(arr)
-    for i in range(n):
-        min_index = i
-
-        for j in range(i + 1, n):
-            if arr[j] < arr[min_index]:
-                min_index = j
-
-        if min_index != i:
-            arr[i], arr[min_index] = arr[min_index], arr[i]
-
-    return arr
-
-print(selection_sort(list(map(int,input("enter the elements space-separated: ").replace(",", "").split()))))
+print(bin_sear(arr=list(map(int,input("enter elements space-seperated: ").replace(',', ' ').split())),target=int(input("enter target: "))))

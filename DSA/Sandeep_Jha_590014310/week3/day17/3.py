@@ -1,14 +1,8 @@
-def sqrroot(n):
-    left = 0
-    right = n
-    for i in range(n):
-        mid = (left + right) // 2
-        if mid * mid == n:
-            return mid
-        elif mid * mid < n:
-            left = mid + 1
-        else:
-            right = mid - 1
-    return "not a perfect square"
+def find_max(arr):
+    max = float('-inf')
+    for n in arr:
+        if n > max:
+            max = n
+    return max
 
-print(sqrroot(int(input("Enter the number: "))))
+print(find_max(arr=list(map(int,input("enter elements space-seperated: ").replace(',', ' ').split()))))

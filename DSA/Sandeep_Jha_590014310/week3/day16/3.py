@@ -1,8 +1,14 @@
-def find_max(arr):
-    max = float('-inf')
-    for n in arr:
-        if n > max:
-            max = n
-    return max
+def bubble_sort(arr):
+    n = len(arr)
+    for i in range(n):
+        swapped = False
+        for j in range(0, n - i - 1):
+            if arr[j] > arr[j + 1]:
+                arr[j], arr[j + 1] = arr[j + 1], arr[j]
+                swapped = True
+        if not swapped:
+            break
+    return arr
 
-print(find_max(arr=list(map(int,input("enter elements space-seperated: ").replace(',', ' ').split()))))
+arr = list(map(int, input("Enter your array (space-separated): ").split()))
+print(bubble_sort(arr))

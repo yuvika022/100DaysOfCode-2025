@@ -1,7 +1,8 @@
-def first_occur(arr, target):
+def count_occur(arr,target):
+    count = 0
     for e in arr:
         if e == target:
-            return arr.index(e)
-    return -1
+            count += 1
+    return count
 
-print(first_occur(arr=list(map(int, input("Enter the array(space-separated): ").split())), target=int(input("Enter the target element: "))))
+print(count_occur(arr=list(map(int,input("enter elements space-seperated: ").replace(',', ' ').split())),target=int(input("enter target: "))))
