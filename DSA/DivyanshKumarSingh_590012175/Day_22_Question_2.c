@@ -1,14 +1,12 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-// Node structure
 struct Node
 {
     int data;
     struct Node *next;
 };
 
-// Insert at end
 struct Node *insertEnd(struct Node *head, int val)
 {
     struct Node *newNode = (struct Node *)malloc(sizeof(struct Node));
@@ -26,7 +24,6 @@ struct Node *insertEnd(struct Node *head, int val)
     return head;
 }
 
-// Count key frequency
 int countFrequency(struct Node *head, int key)
 {
     int count = 0;
