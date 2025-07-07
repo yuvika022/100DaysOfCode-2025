@@ -1,4 +1,4 @@
-public class Day_1_Question_1_2_3{
+public class Day_22_Question_1_2_3{
     public static class Node{
         int data;
         Node next;
