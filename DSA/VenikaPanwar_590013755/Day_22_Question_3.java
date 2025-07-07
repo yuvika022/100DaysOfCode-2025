@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class PrintLinkedList {
+public class Day_22_Question_3 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         Node head = null, tail = null;
