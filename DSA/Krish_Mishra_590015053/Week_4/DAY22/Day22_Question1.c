@@ -1,21 +1,17 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-// Define the structure for a node
 struct Node {
     int data;
     struct Node* next;
 };
 
-// Function to create a new node
 struct Node* createNode(int value) {
     struct Node* newNode = (struct Node*)malloc(sizeof(struct Node));
     newNode->data = value;
     newNode->next = NULL;
     return newNode;
 }
-
-// Function to insert a node at the end
 void insertEnd(struct Node** head, int value) {
     struct Node* newNode = createNode(value);
     if (*head == NULL) {
@@ -40,7 +36,6 @@ struct Node* findMiddle(struct Node* head) {
     return slow;
 }
 
-// Function to print the list
 void printList(struct Node* head) {
     while (head != NULL) {
         printf("%d", head->data);
@@ -50,7 +45,6 @@ void printList(struct Node* head) {
     printf("\n");
 }
 
-// Main function
 int main() {
     struct Node* head = NULL;
     int n, val;
